@@ -4,32 +4,33 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Mobile',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Octopus was designed from the ground to be a personal urban sensing platform
+        made for makers and enthusiasts to collect hyperlocal environmental data 
+        with a mobile platform. 
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Flexible',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The octopus lets you deploy the platform with a variety of use cases,
+        and can be used in very different...
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Modifiable',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend of costumize your octopus by using the Octopus Library and API provided. 
+        
       </>
     ),
   },

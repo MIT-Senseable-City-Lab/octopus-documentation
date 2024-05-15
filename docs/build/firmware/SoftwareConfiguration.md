@@ -17,7 +17,7 @@ To add you board to the Arduino IDE you need to select **Tools menu**, then **Bo
 
 **Nano 33 BLE** | **Nicla Vision**
 Search for **Arduino Mbed OS Nano Board** and click "install". | Search for **Arduino Mbed OS Nicla Board** and click "install".
-![Nano Board](../../images/nanoBoard.png) | ![Nicla Board](../../images/niclaBoard.png)
+![Nano Board](../../../static/img/nanoBoard.png) | ![Nicla Board](../../../static/img/niclaBoard.png)
 
 _NOTE: Please be aware that this core consists of multiple files, and the installation process may take a few minutes._
 
