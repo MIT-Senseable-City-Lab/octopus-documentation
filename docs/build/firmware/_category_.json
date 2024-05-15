@@ -1,0 +1,8 @@
+{
+  "label": "Firmware",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "This guide will give you examples of how to modify the Octopus Firmware"
+  }
+}
