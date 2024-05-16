@@ -15,7 +15,7 @@ Now, just click the "Upload" button in the environment, and allow a few seconds 
 
 _Please note: If the board fails to enter upload mode, perform a double press on the reset button before initiating the upload process. This action should prompt the orange LED to pulse, indicating that the board is ready for upload._
 
-![Upload Sketch] [insert correct link!]
+![Upload Sketch](../../../static/img/uploadCode.png)
 
 After a few seconds, you should see the LED on the octopus start blinking in orange. If that is the case, good work! Everything is correctly set up! If not, try toubleshooting suggestions from the [arduino help center](https://support.arduino.cc/hc/en-us).
 

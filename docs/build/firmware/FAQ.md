@@ -8,6 +8,6 @@ sidebar_position: 4
 
 ---
 
-This is a test file for the repo
+File for common issues when setting up the Octopus. 
 
 ---

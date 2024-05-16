@@ -1,0 +1,29 @@
+---
+sidebar_position: 1
+---
+
+# Octopus OS
+
+---
+
+[insert a short outline]
+
+[Guidelines for common scenarios]
+
+[samples of code]
+
+[Call Out Error Messages and Status Codes]
+
+## Environment
+
+## Dev Environment Setup (?)
+
+## Quick overview of classes and files
+
+## Operation modes
+
+#### Payload
+
+### Vitals
+
+---
