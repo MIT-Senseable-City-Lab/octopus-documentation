@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Mobile',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/mobile.svg').default,
     description: (
       <>
         Octopus was designed from the ground to be a personal urban sensing platform
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Flexible',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/flexible.svg').default,
     description: (
       <>
         The octopus lets you deploy the platform with a variety of use cases,
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Modifiable',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/modifiable.svg').default,
     description: (
       <>
         Extend of costumize your octopus by using the Octopus Library and API provided. 
