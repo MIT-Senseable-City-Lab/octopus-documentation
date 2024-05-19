@@ -22,6 +22,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'aasehaa.github.io', // Usually your GitHub org/user name.
   projectName: 'docusaurus_octopus', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
