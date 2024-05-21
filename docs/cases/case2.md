@@ -1,8 +1,9 @@
 ---
 sidebar_position: 2
+icon: 🌬️
 ---
 
-# Use Case 2: Air Quality Monitoring 🌬️
+# 🌬️ Air Quality Monitoring 
 
 ---
 
@@ -10,7 +11,11 @@ sidebar_position: 2
 
 In this tutorial we will show how to deploy and adapt a mobile octopus while collecting air quality data!
 
-**This guide assumes that you already have built an octopus to monitor air quality with a mobile deployment**
+:::warning
+
+This guide assumes that you already have built an octopus to monitor air quality with a mobile deployment
+
+:::
 
 ## Goals
 

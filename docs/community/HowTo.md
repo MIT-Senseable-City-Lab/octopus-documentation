@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# How To's
+# 🔍 How To's
 
 ---
 

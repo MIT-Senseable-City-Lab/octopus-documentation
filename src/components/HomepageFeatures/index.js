@@ -5,18 +5,18 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Mobile',
-    Svg: require('@site/static/img/mobile.svg').default,
+    Svg: require('@site/static/img/move.svg').default,
     description: (
       <>
-        Octopus was designed from the ground to be a personal urban sensing platform
-        made for makers and enthusiasts to collect hyperlocal environmental data 
-        with a mobile platform. 
+        Octopus was designed from the ground to be a personal urban sensing
+        platform made for makers and enthusiasts to collect hyperlocal
+        environmental data with a mobile platform.
       </>
     ),
   },
   {
     title: 'Flexible',
-    Svg: require('@site/static/img/flexible.svg').default,
+    Svg: require('@site/static/img/provision.svg').default,
     description: (
       <>
         The octopus lets you deploy the platform with a variety of use cases,
@@ -26,24 +26,24 @@ const FeatureList = [
   },
   {
     title: 'Modifiable',
-    Svg: require('@site/static/img/modifiable.svg').default,
+    Svg: require('@site/static/img/pencil.svg').default,
     description: (
       <>
-        Extend of costumize your octopus by using the Octopus Library and API provided. 
-        
+        Extend of costumize your octopus by using the Octopus Library and API
+        provided.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className='text--center'>
+        <Svg className={styles.featureSvg} role='img' />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+      <div className='text--center padding-horiz--md'>
+        <Heading as='h3'>{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
@@ -53,8 +53,8 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+      <div className='container'>
+        <div className='row'>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

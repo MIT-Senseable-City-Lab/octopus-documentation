@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'About Octopus'
+sidebar_label: '❇️ About Octopus'
 sidebar_position: 2
 ---
 
-# About Octopus
+# ❇️ About Octopus
 
 ---
 # *We empower communities around the world to map their environment*

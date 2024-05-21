@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Hello Octopus!'
+sidebar_label: '👋 Hello Octopus!'
 sidebar_position: 3
 ---
 
-# Hello Octopus!
+# 👋 Hello Octopus!
 
 ---
 

@@ -1,17 +1,21 @@
 ---
 sidebar_position: 1
-icon: '🥵'
+icon: 🥵
 ---
 
-# Use Case 1: Temperature Exposure 🥵
+# 🥵 Temperature Exposure 
 
 ---
 
 ## Introduction
 
-In this tutorial we will go through the requirements of getting started with the Octopus Platform through Use Case 1, and how we can use it to map our temperature exposure.
+In this tutorial we will go through the requirements of getting started with the Octopus Platform, and collect temperature exposure data. 
 
-**This guide assumes that you already have built an octopus to monitor temperature, humidity, and pressure.**
+:::warning
+
+This guide assumes that you already have built an octopus to monitor temperature, humidity, and pressure.
+
+:::
 
 ## Goals
 
@@ -21,18 +25,17 @@ The goals of these projects are:
 
   🐙 Collect temperature data with the octopus
   
-  🗂️ Download the data from the Octopus
+  🗂️ Upload the data from the Octopus
   
   📈 Process and analyze the collected data
 
 ## Hardware and Software needed
 
-This guide assumes that you have assembled an octopus from this tutorial (add a link to the tutorial).
 The octopus for temperature exposure consists of these components:
 
-- Octopus (link to correct setup tutorial)
-- Arduino IDE
-- Octopus Library installed
+- [Octopus](../build/)
+- [Arduino IDE](../build/firmware/SoftwareInstallation.md)
+- Octopus Library Installed
 
 ### Octopus Platform Architecture for Temperature Exposure
 
@@ -60,10 +63,12 @@ Temperature sensors are devices designed to translate physical temperature into 
 
 The HS3003 stands out as an ultra-compact sensor engineered for measuring relative humidity and temperature. Utilizing the I2C protocol, we will establish communication with the sensor to retrieve data. The sensor encompasses a range of values, including:
 
-- Humidity accuracy: ± 3.5% rH, 20 to +80% rH
-- Humidity range: 0 to 100 %
-- Temperature accuracy: ± 0.5 °C,15 to +40 °C
-- Temperature range: -40 to 120°C
+_Table 1. Sensor spesification_
+
+| Parameter            | Condition     | Typical   | Range        |
+|:---------------------|:--------------|:---------:|:------------:|
+| Humidity accuracy    | 20 to +80% rH | ± 3.5% rH | 0 to 100 %   |
+| Temperature accuracy | 15 to +40 °C  |  ± 0.5 °C | -40 to 120°C |
 
 These sensor types are used more than you would imagine and are found in various everyday objects!
 
@@ -97,7 +102,7 @@ If you want to read more about the HS3003 sensor you can take a look at the [dat
   Copy-paste the code below, or find it in *Examples* within the Arduino library. This code will read the sensor values, log the values to the Octopus, and print them in the Serial Monitor within Arduino IDE through the `Serial.println()` functions.
 
 TODO: update after you know the scope of Octopus Library
-```
+```py title="TemperatureExposureDeployment.h"
 #include <Octopus.h>
 
 unsigned long previousMillis = 0;
@@ -210,10 +215,10 @@ When developing and adopting sensing technologies, there is a lot of things that
 7. **Serial Communication Interference:** If you're using serial communication for debugging or logging alongside SD card operations, ensure there are no conflicts or interference between the two processes.
 8. **Hardware Failure:** In rare cases, hardware components such as the SD card module or the Arduino board itself may be defective or damaged, leading to unpredictable behavior. Try swapping out components to isolate and identify any faulty hardware.
 
----
+:::tip
 It is very common to have problems with the USB connection, but dont worry. There are a lot of online forums that can help you troubleshoot your problem, have a look at for example the [Arduino Forum](https://forum.arduino.cc/c/using-arduino/6). 
 
----
+:::
 
 ## Conclusion
 

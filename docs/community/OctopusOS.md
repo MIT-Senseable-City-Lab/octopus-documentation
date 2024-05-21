@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Octopus OS
+# 💾 Octopus OS
 
 ---
 

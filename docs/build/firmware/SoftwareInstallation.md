@@ -1,10 +1,10 @@
 ---
 
-sidebar_label: 'Software Installation'
+sidebar_label: '💿 Software Installation'
 sidebar_position: 1
 ---
 
-# **Software Installation**
+# 💿 Software Installation
 
 _Inspired by [Arduino Download IDE]_
 

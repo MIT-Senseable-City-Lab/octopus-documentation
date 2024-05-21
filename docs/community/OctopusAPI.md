@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Octopus API
+# 🔌 Octopus API
 
 ---
 

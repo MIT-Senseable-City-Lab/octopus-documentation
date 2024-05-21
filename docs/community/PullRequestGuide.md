@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Pull Request Guide
+# ⬆️ Pull Request Guide
 
 ---
 

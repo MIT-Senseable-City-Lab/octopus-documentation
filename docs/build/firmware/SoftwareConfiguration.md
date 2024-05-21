@@ -1,11 +1,11 @@
 ---
-sidebar_label: 'Software Configuration'
+sidebar_label: '⚙️ Software Configuration'
 sidebar_position: 2
 ---
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-# Software Configuration
+# ⚙️ Software Configuration
 
 ---
 
