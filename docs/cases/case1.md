@@ -67,8 +67,8 @@ _Table 1. Sensor spesification_
 
 | Parameter            | Condition     | Typical   | Range        |
 |:---------------------|:--------------|:---------:|:------------:|
-| Humidity accuracy    | 20 to +80% rH | ± 3.5% rH | 0 to 100 %   |
-| Temperature accuracy | 15 to +40 °C  |  ± 0.5 °C | -40 to 120°C |
+| Humidity     | 20 to +80% rH | ± 3.5% rH | 0 to 100 %   |
+| Temperature  | 15 to +40 °C  |  ± 0.5 °C | -40 to 120°C |
 
 These sensor types are used more than you would imagine and are found in various everyday objects!
 
@@ -196,7 +196,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 Now that you have the data collected, it's time to analyze it to answer our questions about heat exposure. This guide will provide you with a setup for how to use Google Colaboratory in analyzing your data. 
 
-How to setup Google Colaboratory is added in How To's: [add link here]
+How to setup Google Colaboratory is added in How To's: [How to setup Google Colaboratory](../community/HowTo.md)
 
 Google Colab Notebook for heat exposure data analysis: <a href="./notebooks/UseCase1_HeatExposure.ipynb" download>Click to Download</a>
 

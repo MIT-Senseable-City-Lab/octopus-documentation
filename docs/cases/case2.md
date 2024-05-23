@@ -3,6 +3,7 @@ sidebar_position: 2
 icon: 🌬️
 ---
 
+
 # 🌬️ Air Quality Monitoring 
 
 ---
@@ -66,18 +67,24 @@ PM4 and PM10 output values are also provided and calculated based on distributio
 
 Mass concentration precision: 
 
-- PM1: ± 5 μg/m3 + 5 % m.v., 0 to 100 μg/m3  
-- PM2.5: ± 5 μg/m3 + 5 % m.v., 0 to 100 μg/m3 
-- PM4: ±25 μg/m3, 0 to 100 μg/m3 
-- PM10: ±25 μg/m3, 0 to 100 μg/m3
+| Parameter            | Accuracy    | Range        |
+|:---------------------|:-------------|:------------:|
+| PM1 | ± 5 μg/m3 | 0 to 100 μg/m3 |
+| PM2.5 | ± 5 μg/m3 | 0 to 100 μg/m3 |
+| PM4 | ±25 μg/m3 | 0 to 100 μg/m3 |
+| PM10 | ±25 μg/m3 | 0 to 100 μg/m3 |
 
 If you want to read more about the Sensirion SPS30 PM2.5 Sensor you can take a look at the [datahseets](https://sensirion.com/media/documents/8600FF88/64A3B8D6/Sensirion_PM_Sensors_Datasheet_SPS30.pdf) provided by Senserion.
 
-### Adhesive GPS Antenna
-*Molex538-206560-0100*
+### Adhesive GPS Antenna - *Molex538-206560-0100*
 
-TODO: add information and usage notes for this component used in use case 2
+The Molex 538-206560-0100 is a GPS antenna known for its efficient performance in receiving GPS signals. It is typically used in applications requiring precise location tracking, such as in automotive and mobile devices. The antenna's compact design allows for easy integration into various electronic systems, enhancing signal reception without significant space requirements.
 
+![GPSantenna](../../static/img/antenna.png)
+
+[add notes / pictures of how to place the antenna]
+
+    
 ---
 
 ## Programming the board
@@ -98,7 +105,7 @@ The code below is similar to the one you opened from the examples folder. This c
 TODO: update after you know the scope of Octopus Library
 TODO: edit based on use case 2
 
-```
+```py title="MobileAirQualityMonitoring.h"
 #include <Octopus.h>
 
 unsigned long previousMillis = 0;
@@ -211,10 +218,11 @@ When developing and adopting sensing technologies, there is a lot of things that
 7. **Serial Communication Interference:** If you're using serial communication for debugging or logging alongside SD card operations, ensure there are no conflicts or interference between the two processes.
 8. **Hardware Failure:** In rare cases, hardware components such as the SD card module or the Arduino board itself may be defective or damaged, leading to unpredictable behavior. Try swapping out components to isolate and identify any faulty hardware.
 
----
+:::tip
+
 It is very common to have problems with the USB connection, but dont worry. There are a lot of online forums that can help you troubleshoot your problem, have a look at for example the [Arduino Forum](https://forum.arduino.cc/c/using-arduino/6). 
 
----
+:::
 
 ## Conclusion
 
