@@ -4,7 +4,7 @@ icon: 🌬️
 ---
 
 
-# 🌬️ Air Quality Monitoring 
+# 🌬️ Mobile Air Quality Monitoring 
 
 ---
 
@@ -82,8 +82,6 @@ The Molex 538-206560-0100 is a GPS antenna known for its efficient performance i
 
 ![GPSantenna](../../static/img/antenna.png)
 
-[add notes / pictures of how to place the antenna]
-
     
 ---
 
@@ -102,7 +100,6 @@ Next, connect the Arduino Nano 33 BLE Sense Rev2 to your computer to verify if t
 The code below is similar to the one you opened from the examples folder. This code will read the sensor values, and print them in the Serial Monitor within Arduino IDE through the `Serial.println()` functions.
 
 
-TODO: update after you know the scope of Octopus Library
 TODO: edit based on use case 2
 
 ```py title="MobileAirQualityMonitoring.h"
@@ -215,8 +212,7 @@ When developing and adopting sensing technologies, there is a lot of things that
 4. **File System Corruption:** Writing data to the SD card incorrectly or abruptly removing power while writing can lead to file system corruption. This can cause errors when trying to read or write data. Safely eject the SD card before removing it from the Arduino.
 5. **File Open/Close Errors:** Make sure you're correctly opening and closing files on the SD card. Failure to close a file properly after writing data can lead to data loss or corruption.
 6. **Buffer Overflow:** Writing too much data to the SD card buffer at once can cause buffer overflow errors. Ensure you're writing data in manageable chunks and not overwhelming the buffer.
-7. **Serial Communication Interference:** If you're using serial communication for debugging or logging alongside SD card operations, ensure there are no conflicts or interference between the two processes.
-8. **Hardware Failure:** In rare cases, hardware components such as the SD card module or the Arduino board itself may be defective or damaged, leading to unpredictable behavior. Try swapping out components to isolate and identify any faulty hardware.
+7. **Hardware Failure:** In rare cases, hardware components such as the SD card module or the Arduino board itself may be defective or damaged, leading to unpredictable behavior. Try swapping out components to isolate and identify any faulty hardware.
 
 :::tip
 

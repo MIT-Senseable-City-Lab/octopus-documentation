@@ -7,6 +7,8 @@ sidebar_position: 4
 
 ---
 
-File for common issues when setting up the Octopus. 
+:::info
 
----
+This document be extended based on challenges and issues encountered by the octopus community.  
+
+:::

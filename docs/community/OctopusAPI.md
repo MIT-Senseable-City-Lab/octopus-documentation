@@ -11,15 +11,6 @@ The Octopus Arduino Library gives you a variety of methods to use on the octoous
 To use this library:
 `#include <Octopus.h>`
 
-The Octopus library takes care of the sensor initialization and sets its values as follows:
-
-_example_
-
-* Absolute pressure range: 260 to 1260 hPa.
-* Humidity range: 0 to 100% relative humidity (rH).
-* Humidity accuracy: ± 3.5% rH, 20 to +80% rH.
-* Temperature range -40 to 120 °C.
-* Temperature accuracy: ± 0.5 °C from 15 to 40 °C.
 
 ## Methods
 

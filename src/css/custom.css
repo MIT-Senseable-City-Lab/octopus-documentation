@@ -21,15 +21,16 @@
 
 
 :root {
-  --ifm-color-primary: #5d4fe8;
-  --ifm-color-primary-dark: #665ae2;
-  --ifm-color-primary-darker: #7066ed;
-  --ifm-color-primary-darkest: #7a72f7;
-  --ifm-color-primary-light: #8a82f9;
-  --ifm-color-primary-lighter: #9a92fc;
-  --ifm-color-primary-lightest: #aaa2ff;
+  --ifm-color-primary: #25205C;             /* Main color */
+  --ifm-color-primary-lightest: #8079A9;     /* Lightest shade */
+  --ifm-color-primary-lighter: #514C7F;      /* Lighter shade */
+  --ifm-color-primary-light: #3A3460;        /* Slightly lighter than main */
+  --ifm-color-primary-dark: #1B173E;         /* Darker shade */
+  --ifm-color-primary-darker: #15122F;       /* Even darker shade */
+  --ifm-color-primary-darkest: #0F0D20;      /* Darkest shade */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
 
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -47,14 +48,14 @@
 **/
 
 [data-theme='dark'] {
-  --ifm-color-primary: #5d4fe8;
-  --ifm-color-primary-dark: #665ae2;
-  --ifm-color-primary-darker: #7066ed;
-  --ifm-color-primary-darkest: #7a72f7;
-  --ifm-color-primary-light: #8a82f9;
-  --ifm-color-primary-lighter: #9a92fc;
-  --ifm-color-primary-lightest: #aaa2ff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #514C7F;             /* Slightly lighter primary color for better visibility */
+  --ifm-color-primary-lightest: #AAA2FF;    /* Lightest shade for highlights */
+  --ifm-color-primary-lighter: #8079A9;     /* Second lightest, good for less prominent UI elements */
+  --ifm-color-primary-light: #5D4FE8;       /* Bright and vibrant for attention */
+  --ifm-color-primary-dark: #25205C;        /* Original main color as the dark variant */
+  --ifm-color-primary-darker: #1B173E;      /* Darker, useful for depth */
+  --ifm-color-primary-darkest: #0F0D20;     /* Darkest, for ultra low-light UI parts */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Lighter highlight for code */
 }
 
 

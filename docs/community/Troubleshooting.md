@@ -6,6 +6,9 @@ sidebar_position: 4
 
 ---
 
-This is a test file for the repo
+:::info
 
+This document be extended based on challenges and issues encountered by the octopus community.  
+
+:::
 ---

@@ -49,7 +49,11 @@ Monitoring temperature with the octopus is a cheap and simple way to use the oct
 
 The progress bars below each component is indicating how much processing power is used. As you can see, most of the processing power used in this use case is placed in the cloud when you clean and analyze the collected data. 
 
-*Note:* There are however other ways to do this analysis with the provided notebook; JupyterLab, Kaggle Kernels, Microsoft Azure Notebooks, and more. 
+:::info
+
+There are however other ways to do this analysis with the provided notebook; JupyterLab, Kaggle Kernels, Microsoft Azure Notebooks, and more. 
+
+:::
 
 ## How the sensors work
 
@@ -99,9 +103,8 @@ If you want to read more about the HS3003 sensor you can take a look at the [dat
 
 3.**Test data logging and print sensor values**
 
-  Copy-paste the code below, or find it in *Examples* within the Arduino library. This code will read the sensor values, log the values to the Octopus, and print them in the Serial Monitor within Arduino IDE through the `Serial.println()` functions.
+  Copy-paste the code below, or find it in *Examples* within the Arduino library. This code will read the sensor values and print them in the Serial Monitor within Arduino IDE through the `Serial.println()` functions. By default, the octopus will log all data from connected sensors to the SD card after `start()`. 
 
-TODO: update after you know the scope of Octopus Library
 ```py title="TemperatureExposureDeployment.h"
 #include <Octopus.h>
 
@@ -186,7 +189,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 | **Physical Casing and Placement** | |
 |--------|---------|
-| Weatherproof Casing | Even though the octopus can handle some rain, try to limit the amount of heavy rain. |
+| Weatherproof Casing | The Octopus can not handle rain at this stage, so try to limit the amount of heavy rain. |
 | Mounting and Placement | Securely mount the casing to avoid physical damage from wind or animals. Placement should be considered to minimize exposure to direct sunlight and maximize exposure to ambient air.|
 | Maintenance Accessibility | Design the installation so that the device can be easily accessed for maintenance, calibration, or battery replacement. |
 
@@ -212,8 +215,7 @@ When developing and adopting sensing technologies, there is a lot of things that
 4. **File System Corruption:** Writing data to the SD card incorrectly or abruptly removing power while writing can lead to file system corruption. This can cause errors when trying to read or write data. Safely eject the SD card before removing it from the Arduino.
 5. **File Open/Close Errors:** Make sure you're correctly opening and closing files on the SD card. Failure to close a file properly after writing data can lead to data loss or corruption.
 6. **Buffer Overflow:** Writing too much data to the SD card buffer at once can cause buffer overflow errors. Ensure you're writing data in manageable chunks and not overwhelming the buffer.
-7. **Serial Communication Interference:** If you're using serial communication for debugging or logging alongside SD card operations, ensure there are no conflicts or interference between the two processes.
-8. **Hardware Failure:** In rare cases, hardware components such as the SD card module or the Arduino board itself may be defective or damaged, leading to unpredictable behavior. Try swapping out components to isolate and identify any faulty hardware.
+7. **Hardware Failure:** In rare cases, hardware components such as the SD card module or the Arduino board itself may be defective or damaged, leading to unpredictable behavior. Try swapping out components to isolate and identify any faulty hardware.
 
 :::tip
 It is very common to have problems with the USB connection, but dont worry. There are a lot of online forums that can help you troubleshoot your problem, have a look at for example the [Arduino Forum](https://forum.arduino.cc/c/using-arduino/6). 
@@ -224,9 +226,9 @@ It is very common to have problems with the USB connection, but dont worry. Ther
 
 Good work! This guide has shown you how to use the octopus to monitor heat in a fixed position. By only using the base of the octopus device, you are able to measure hyperlocal temperature levels! Are you ready for the next challenge? 😉
 
-We encourage you to have a look at the next use cases 2 and 3 to explore new projects with urban sensing. 
+We encourage you to have a look at the next use cases 2 and 3 with GPS locations, air pollution, and vision based monitoring to explore new projects with urban sensing. 
 
-Please leave a comment in the GitHub repo if you have any feedback for Use Case 1 😊
+Please leave a comment in the GitHub repo if you have any feedback for the Temperature Exposure Use Case 😊
 
 ---
 

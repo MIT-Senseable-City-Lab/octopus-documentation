@@ -6,6 +6,5 @@ sidebar_position: 5
 
 ---
 
-This is a test file for the repo
 
----
+

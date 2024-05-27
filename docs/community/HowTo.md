@@ -6,6 +6,12 @@ sidebar_position: 3
 
 ---
 
+:::info
+
+This document be extended based on challenges and issues encountered by the octopus community.  
+
+:::
+
 ## Google Colaboratory Setup
 
 1. Click the “New” button on the left hand side of the Google drive page.
