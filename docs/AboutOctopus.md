@@ -14,8 +14,6 @@ The octopus is a personal environmental sensing device made for makers who are i
 
 ## History of City Scanner
 
-TODO: [insert picture of history of city scanner]
-
 The first prototype of the mobile environmental sensor was called Greta (2017), and the next iterations (Greta 2, Blackburn, Whiteburn, and Flatburn) were all based on the same idea of making a mobile environmental sensing device to put on top of a viecle to collect hyperlocal environmental data. 
 
 
@@ -23,21 +21,41 @@ The latest iteration was [Flatburn (2023)](https://senseable.mit.edu/flatburn/).
 
 ---
 
-### Choices in Fabrication
+### 2023 Flatburn
 
-The Octopus has many choices in fabrication designed for makers to develop and deploy the device. They are all selected to keep the price low using accessible tools for the maker communities such as 3D printing and the reuse of Arduino components commonly used in projects today. To make the "legs" for the octopus, use ingredients from your kitchen to "cook" it together! 
+_Beirut (2023), Amsterdam (2023)_
 
-- 3D printing
+![Flatburn](@site/static/img/flatburn.jpg)
 
-- "Make your octopus in your kitchen"
 
-- Reuse of Arduino boards
+### 2022 Whiteburn
 
-### Modifiability
+_Boston (2019), New York (2020), Stockholm (2021), Oskemen (2021), Beirut (2022)_
 
-Modifiability is one key feature for the octopus, where the makers are able to modify their octopus related to what they want to sense! 
+![Whiteburn](@site/static/img/whiteburn.jpg)
 
-- Arduino boards - Nano and Nicla
 
-- Selection of SPS30 Senserion (gas), GPS, temperaature, humidity, and barometic pressure. 
+### 2019 Blackburn
+
+_Boston (2019)_
+
+![Blackburn](@site/static/img/blackburn.jpg)
+
+Blackburn, a new form-factor characterized by a waterproof shell and optimized sensing hardware, enables for large sensing fleet towards long-term data collection studies.
+
+### 2018 Greta II
+
+_Boston (2018), New York (2018)_
+
+![Greta II](@site/static/img/greta2.jpg)
+
+Greta II, adds real-time data streaming, a novel non-permanent magnetic binding system and autonomous operations via solar energy.
+
+### 2017 Greta I
+
+_Boston (2017)_
+
+![Greta I](@site/static/img/greta1.jpg)
+
+Greta I, our concept prototype, an exploration of different modular sensing components for the first time deployed on a moving vehicle.
 
