@@ -27,6 +27,12 @@ _Beirut (2023), Amsterdam (2023)_
 
 ![Flatburn](@site/static/img/flatburn.jpg)
 
+*We emposer communities around the world to monitor their enviornment*. Part of the City Scanner project, Flatburn is an open-source, 3D-printed environmental sensor. Flatburn is powered using a solar panel and can be mounted on vehicles using magnetic pads. The core module houses the electronics, antenna, and data storage board. The sensing module houses heat, noise, and air quality sensors.
+
+Build your own Flatburn and help your community monitor its environment.
+
+
+
 
 ### 2022 Whiteburn
 
