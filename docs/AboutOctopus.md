@@ -63,5 +63,5 @@ _Boston (2017)_
 
 ![Greta I](@site/static/img/greta1.jpg)
 
-Greta I, our concept prototype, an exploration of different modular sensing components for the first time deployed on a moving vehicle.
+Greta I, our concept prototype, an exploration of different modular sensing components for the first time deployed on a moving vehicle. The device should be highly modifiable and flexible to what environmental factors the user wanted to sense.  
 
