@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 🤖 Body Frame
 
+_How to build the bodyframe of the octopus_
+
 ---
 
 Guide to how to assemble the Octopus BodyFrame!

@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 🏁 Getting Started
 
+_Select your Octopus_
+
 ---
 
 This is a guide to help you select the correct Octopus for your use case.

@@ -5,6 +5,8 @@ sidebar_position: 4
 
 # 💬 FAQ
 
+_Challenges encountered by the octopus community_
+
 ---
 
 :::info

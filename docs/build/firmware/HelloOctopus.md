@@ -5,6 +5,8 @@ sidebar_position: 3
 
 # 👋 Hello Octopus!
 
+_Upload your first sketch!_
+
 ---
 
 This guide will show you how to upload your first octopus file and check that everything is set up correctly! 

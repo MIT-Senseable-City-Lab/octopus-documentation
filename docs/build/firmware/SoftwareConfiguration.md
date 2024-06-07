@@ -7,6 +7,8 @@ import TabItem from '@theme/TabItem'
 
 # ⚙️ Software Configuration
 
+_How to connect your Octopus to Arduino IDE_
+
 ---
 
 Depending on your Octopus, there are two different ways to configure Arduino IDE for development (Arduino Nano 33 BLE, and Arduino Nicla Vision). Both cases requires you do download libraries and configuring boards and ports to be able to flash the code needed for the ocotopus.

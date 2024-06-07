@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 🔌 Octopus API
 
+_Octopus Library and function calls_
+
 ---
 
 The Octopus Arduino Library gives you a variety of methods to use on the octoous-object to modify its behaviour. The overview is found below.

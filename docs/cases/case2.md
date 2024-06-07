@@ -4,7 +4,10 @@ icon: 🌬️
 ---
 
 
-# 🌬️ Mobile Air Quality Monitoring 
+# 🌬️ Air Quality Monitoring 
+
+
+_Mobile deployment with the octopus_
 
 ---
 

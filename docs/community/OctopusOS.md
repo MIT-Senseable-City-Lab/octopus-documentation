@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 💾 Octopus OS
 
+_[TBA] Octopus Architectue Overview_
+
 ---
 
 TBA

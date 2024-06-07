@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # ❗ Troubleshooting
 
+_Possible callenges with the Octopus_
+
 ---
 
 :::info

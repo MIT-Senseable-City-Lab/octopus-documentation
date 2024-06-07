@@ -5,6 +5,8 @@ icon: 🥵
 
 # 🥵 Temperature Exposure 
 
+_Beginner friendly use case with the octopus_
+
 ---
 
 ## Introduction

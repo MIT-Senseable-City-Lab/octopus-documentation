@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # ⬆️ Pull Request Guide
 
+_How to contribute to the Octopus Platform_
+
 ---
 
 The following is a basic guide for creating pull requests for submitting to any of the Octopus repositories such as **this Documentation** or **Octopus Arduino Library** used to deploy the Octopus. 
