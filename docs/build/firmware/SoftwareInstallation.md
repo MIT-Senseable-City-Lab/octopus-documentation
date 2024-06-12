@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # 💿 Software Installation
 
-_Inspired by [Arduino Download IDE]_
+_Arduino IDE, OpenMV IDE_
 
 ---
 
@@ -29,7 +29,12 @@ Once the download and installation process is successfully completed, launch the
 
 Congratulations! 🎉 You've successfully installed the program. Now you're ready to configure your IDE and start coding! Great job. 😃
 
+## Download and install OpenMV IDE
+
+First, go to the [OpenMV IDE] download page to download the software...
+
 ---
 
 [Arduino Download IDE]: https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE
 [software]: https://www.arduino.cc/en/software
+[OpenMV IDE]: https://openmv.io/pages/download 
