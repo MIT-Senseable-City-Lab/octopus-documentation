@@ -1,5 +1,5 @@
 ---
-sidebar_label: '❇️ About Octopus'
+sidebar_label: 'About Octopus'
 sidebar_position: 2
 ---
 
