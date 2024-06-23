@@ -34,10 +34,10 @@ The goals for this project are:
 
 ## Hardware and Software needed
 
-This guide assumes that you have assembled an octopus with a Nicla Vision (add a link to the tutorial).
+This guide assumes that you have assembled an octopus with a Nicla Vision.
 The octopus for image classification consists of these components:
 
-- Octopus (link to correct setup tutorial)
+- Octopus (Nicla Vision version)
 - Arduino IDE
 - Octopus Library installed
 - Account in [Edge Impulse](https://edgeimpulse.com/)
@@ -171,8 +171,6 @@ Once your dataset is ready, you should proceed to the Edge Impulse Studio and up
 
 Next, we'll use the Edge Impulse Studio for training our model. Start by entering your account credentials, then create a new project within the platform.
 
-[add image]
-
 :::tip
 
 Here, you can clone a similar project: [NICLA-Vision_Image_Classification](https://studio.edgeimpulse.com/public/273858/latest).
@@ -193,7 +191,7 @@ In the Studio, navigate to the 'Data acquisition' tab. Under the 'UPLOAD DATA' s
 
 ![edge_1](../../static/img/edgeimpulse/edge_1.png)
 
-Upload the files for the chosen categories from your computer. The Studio will handle the division of the original dataset into training and test sets. When uploading, specify the label for the specific data. In my case, I uploaded the folder with pictures of white_daisy:
+Upload the files for the chosen categories from your computer. The Studio will handle the division of the original dataset into training and test sets. When uploading, specify the label for the specific data. In this case, we uploaded the folder with pictures of white_daisy:
 
 ![edge_2](../../static/img/edgeimpulse/edge_2.png)
 
@@ -210,7 +208,7 @@ The Studio provides tools to explore and manage your data effectively. It offers
 
 ![edge_4](../../static/img/edgeimpulse/edge_4.png)
 
-*Note:* In the example above, you can see that my 'background' images are only a few. This is because I only added 7 images of a white background for the model. In your case, try to add more pictures, maybe with different lights and shadows on the background to make the model more robust. 
+*Note:* In the example above, you can see that the 'background' images are only a few. This is because we only added 7 images of a white background for the model. In your case, try to add more pictures, maybe with different lights and shadows on the background to make the model more robust. 
 
 
 ### The Impulse Design
@@ -316,7 +314,59 @@ However, we decide to move on and test our model in the real world!
 
 ## Deploying the model in Arduino IDE
 
+Finally we are here, and we can deploy our model on the Octopus! 
+
+EdgeImpulse provides two different ways to deploy the trained model on the Nicla Vision Board: as a library, or as a firmware. In this example, we deploy it as an Arduino Library. 
+
+1. Move to the "Deployment" page
+2. Search for "Arduino Library"
+3. Make sure the deployment is for `Arduino Nicla Vision`
+4. Push `Build`
+
+Then, on your computer you will have the Arduino Library! 
+
+5. Upload the library, and run the cketch `nicla_vision_camera.ino` available in Examples undert the library name. 
+
 ### Changing the Octopus LED based on classification results
+
+To have the octopus respond with LED colors to the classified values from the model running on yout octopus, therea re a few changes that needs to be done with the file `nicla_vision_camera.ino`. 
+
+First, in the `loop()`, before printing the predicted values to the Serial Monitor, add the code below: 
+```python
+if (result.classification[1].value > 0.8) {
+    ei_printf("green\n");
+    setRGBColor(0, 255, 0);
+    delay(1000);
+  }
+  
+  if (result.classification[2].value > 0.8) 
+  {
+    ei_printf("red\n");
+    setRGBColor(255, 0, 0);
+    delay(1000);
+  }
+```
+
+
+In the end of your file, add the function `setRGBColor()`: 
+
+```python
+/**
+ * @brief   Set the RGB color
+ *
+ * @param[in]  red     Red component (0-255)
+ * @param[in]  green   Green component (0-255)
+ * @param[in]  blue    Blue component (0-255)
+ */
+void setRGBColor(uint8_t red, uint8_t green, uint8_t blue) {
+    for (int i = 0; i < NUMPIXELS; i++) {
+        strip.setPixelColor(i, strip.Color(red, green, blue));
+    }
+    strip.show();
+}
+```
+
+Now, try to compile and run the code, and see the values change based on the classifications!
 
 ---
 
