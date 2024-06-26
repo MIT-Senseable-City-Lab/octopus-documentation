@@ -409,13 +409,10 @@ It is very common to have problems with the USB connection, but dont worry. Ther
 
 ## Conclusion
 
-[UPDATE]
 
-Good work! This guide has shown you how to use the octopus to monitor air quality with a mobile deployment. By only using the base of the octopus device, you are able to measure hyperlocal air quality levels! Are you ready for the next challenge? 😉
+Good work! This guide has shown you how to use the octopus to build an image classification model to classify flowers in your environment. By utilizing the opportunities of EdgeAI technologies, your small Octopus is able to classify flowers and change colors based on what it "sees"! 😉
 
-We encourage you to have a look at the next use cases 3 to explore new projects with urban sensing and the use of EdgeAI. 
-
-Please leave a comment in the GitHub repo if you have any feedback for Use Case 2 😊
+Please leave a comment in the GitHub repo if you have any feedback for Use Case 3 😊
 
 ---
 
