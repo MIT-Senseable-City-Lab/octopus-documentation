@@ -1,6 +1,6 @@
 {
   "label": "Community Documentation",
-  "position": 5,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Operating System, API, troubleshooting, resources, and how to contribute to the platform."
