@@ -8,15 +8,44 @@ _Select your Octopus_
 
 ---
 
-This is a guide to help you select the correct Octopus for your use case.
+This is a guide to help you select the correct Octopus setup for your use case.
 
 ---
 
-## Choose your Octopus
 
-To build the octopus, you need to build and develop three parts: the bodyframe, the hardware, and decide on a use case for the software to flash to your device. Below, you can find a flowchart helping you to decide which components you need to build your octopus based on what you want to sense. 
 
-![Full Flowchart](../../static/img/flowchart_long_full.jpg)
+The core of the octopus lies within the three presented factors below: fabricability, modularity and 'deploy everywhere'
+
+:::tip[⚙️ Fabricability]
+
+*Ability to be formed or shaped; capable of being constructed or manufactured*
+
+:::
+
+:::tip[🧩 Modularity]
+
+*The degree to which a system's components may be separated and recombined, often with the benefit of flexibility and variety in use.*
+
+:::
+
+:::tip[🌎 Deploy everywhere]
+
+*The ability of being deployed in a fixed or mobile deployment on a variety of surfaces*
+
+
+:::
+
+
+
+___
+
+
+# 3 setup examples
+*Connected with different use cases*
+
+The Octopus is developed for three use cases in mind - weather monitoring (easy), air pollution monitoring (medium) and visual AI opportunities (hard). 
+
+![Usecases](@site/static/img/usecases.png)
 
 
 ## Quickstart
@@ -38,7 +67,7 @@ Overview of all hardware components possible to add to the octopus:
 | Arduino Nano 33 BLE Sense Rev 2 | Arduino microcontroller board  | https://store.arduino.cc/products/arduino-nano-33-ble |
 | Arduino Nicla Vision | Arduino Pro microcontroller board | https://store.arduino.cc/products/nicla-vision |
 | SPS30 | Particulate matter evaluation kit | https://sensirion.com/products/catalog/SEK-SPS30 |
-| GPS Antenna | Adhesive GPS Antenna - Molex538-206560-0100 | [Mouser Electronics Molex 206560 Series Antennas](https://www.mouser.com/c/passive-components/antennas/?m=Molex&series=206560&utm_id=19914898984&gad_source=1&gclid=Cj0KCQjw3tCyBhDBARIsAEY0XNkwoje8KX9b8d_9NSWCjiwZ1G_gke2gxVIS4OW0obgy1zB74T8_XRsaAi8OEALw_wcB) |
+| GPS | GPS-18037 | [Mouser Electronics GPS-18037](https://www.mouser.mx/ProductDetail/SparkFun/GPS-18037?qs=rQFj71Wb1eUM7j0Oxt1D1A%3D%3D&mgh=1&vip=1&utm_id=17633969509&gad_source=1&gclid=Cj0KCQiAoae5BhCNARIsADVLzZdcZ2ZanU2UDGkh5lrSBZskUVBFUGK0qr-DrMdrjoNtE6K1AX5rSW4aAk0pEALw_wcB) |
 | Lithium Battery | Lightwaited battery based on Lithium Ion chemistry. Order size of the battery related to your specific use case. | https://www.sparkfun.com/products/13851 |
 | SD Card | SD card to store collected data. | [List from Amazon](https://www.amazon.com/micro-sd-card/s?k=micro+sd+card) |
 

@@ -66,7 +66,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/MIT-Senseable-City-Lab/octopus-firmware',
             label: 'GitHub',
             position: 'right',
           },
