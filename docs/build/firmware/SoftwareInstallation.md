@@ -31,6 +31,11 @@ Congratulations! 🎉 You've successfully installed the program. Now you're read
 
 ## Download and install OpenMV IDE
 
+:::info
+OpenMV is needed for example [Flower (Image) classification](../../cases/case3.md). 
+
+:::
+
 First, go to the [OpenMV IDE] download page to download the correct version for your Operating System, and follow the instructions for its installation on your computer.
 
 The IDE should open, defaulting to the helloworld_1.py code on its Code Area. If not, you can open it from **Files > Examples > HelloWord > helloword.py**
