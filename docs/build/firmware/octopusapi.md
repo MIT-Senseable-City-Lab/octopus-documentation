@@ -1,5 +1,6 @@
 ---
-sidebar_position: 2
+sidebar_label: '🔌 Octopus API'
+sidebar_position: 4
 ---
 
 # 🔌 Octopus API
@@ -157,4 +158,5 @@ To use this library:
     octopus.setInterval(5000) // sets the interval for data logging to 5 seconds
     ```
 </details>
+
 
