@@ -35,8 +35,8 @@ The goals of these projects are:
 
 The octopus for temperature exposure consists of these components:
 
-- [Octopus](../build/)
-- [Arduino IDE](../build/firmware/SoftwareInstallation.md)
+- [Octopus](../category/build)
+- [Arduino IDE](../build/firmware/Softwareinstallation.md)
 - Octopus Library Installed
 
 ### Octopus Platform Architecture for Temperature Exposure
