@@ -28,55 +28,72 @@ For a visual reference to the same process, please see [Nemgrea’s video guide]
 
 :::
 
-1. Make sure you have a github user, if not, create one.
-2. Browse to the Octopus Github repo, eith **Octopus Documentation** or **Octopus Library**.
+1. Make sure you have a GitHub user, if not, create one.
+2. Browse to the Octopus Github repo, either **Octopus Documentation** or **Octopus Library**.
 3. On the top right, click on **‘Fork’**.
 4. It will process for a few seconds, then return back with a fork of the selected repository. The owner will no longer be *‘Senseable City Lab’*, but the user who forked the repository.
-5. Make the desired changes to the local / forked repository. This can be done from the web UI, the command line, or other softwares with git.
+5. Make the desired changes to the local/forked repository. This can be done from the web UI, the command line, or other software with git.
 6. Create a commit with your changes. This will add the changed files to the request.
 7. Return back to the main octopus repo by clicking the link next to *“forked from SenseableCityLab/”*
 8. Select **Pull Requests** and click the **New Pull Request** button.
 9. Select **Compare Across Forks** and select your repository.
 10. Give a title for your pull request and fill out the form.
-11. Click Create Pull Request. This wil submit your request, and will manually be reviews by developers at Senseable City Lab.
+11. Click Create Pull Request. This will submit your request, and will manually be reviewed by developers at Senseable City Lab.
+
+
 
 ---
 
 
 # ❗ Troubleshooting
 
-_Possible callenges with the Octopus_
+_Possible challenges with the Octopus_
+
 
 ---
+
 
 :::info
 
-This document be extended based on challenges and issues encountered by the octopus community.  
+
+This document will be extended based on challenges and issues encountered by the octopus community. 
+
 
 :::
 
+
+
 ---
+
 
 # 🌐 Other Resources
 
+
 ---
+
 
 :::info
 
-This document be extended based on challenges and issues encountered by the octopus community.  
+
+This document will be extended based on challenges and issues encountered by the octopus community. 
+
 
 :::
 
+
 ## Arduino Forum
+
 
 If you want to explore other projects made with Arduino, we encourage you to have a look at the official [Arduino Forum](https://forum.arduino.cc/). The Arduino Forum is an online community platform where Arduino enthusiasts, hobbyists, and professionals share knowledge, discuss projects, and solve problems related to Arduino hardware and software. It serves as a valuable resource for users of all skill levels to learn about Arduino programming, connect with others, and explore a wide range of topics from basic electronics to complex systems integration.
 
-Link: https://forum.arduino.cc/ 
+Link: https://forum.arduino.cc/
 
 
 ## Data analysis software
 
-For the use cases provided, the guide shows how to analyze the collected data by using Google Colaboratory. However, there are other tools to use to analyze the environmental data that can be used: 
+
+For the use cases provided, the guide shows how to analyze the collected data by using Google Colaboratory. However, there are other tools to use to analyze the environmental data that can be used:
+
 
 | **Link** | **Comment** |
 |-----------------:|:-----------------|

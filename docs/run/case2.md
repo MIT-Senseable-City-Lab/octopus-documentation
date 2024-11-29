@@ -13,7 +13,7 @@ _Mobile deployment with the octopus_
 
 ## Introduction
 
-In this tutorial we will show how to deploy and adapt a mobile octopus while collecting air quality data!
+In this tutorial, we will show how to deploy and adapt a mobile octopus while collecting air quality data!
 
 :::warning
 
@@ -50,23 +50,23 @@ Monitoring heat with the octopus is a cheap and simple way to use the octopus. T
 2. Then, you take the SD card and upload the raw data to your computer. Until this step, no processing has happened to the collected data.
 3. In the notebook provided, you get to upload your data and visualize it in a graph. To process the data, we use online services from Google (running a notebook in Google Colab to process data, and Google Disk to store the data). 
 
- The progress bars below each component is indicating how much processing power is used. As you can see, most of the processing power used in this use case is placed in the cloud when you clean and analyze the collected data. 
+ The progress bars below each component indicate how much processing power is used. As you can see, most of the processing power used in this use case is placed in the cloud when you clean and analyze the collected data. 
 
 *Note:* There are however other ways to do this analysis with the provided notebook; JupyterLab, Kaggle Kernels, Microsoft Azure Notebooks, and more. 
 
 ## How the sensors work
 
-Before we test our setup, let's have another look at the Sensirion SPS30 PM2.5 Sensor that come with the Octopus to monitor air quality.
+Before we test our setup, let's have another look at the Sensirion SPS30 PM2.5 Sensor that comes with the Octopus to monitor air quality.
 
 ### The Sensirion SPS30 PM2.5 Sensor
 
-Information about the sensor is taken from the occifial [website of Senserion](https://sensirion.com/products/catalog/SEK-SPS30) and the [datahseets](https://sensirion.com/media/documents/8600FF88/64A3B8D6/Sensirion_PM_Sensors_Datasheet_SPS30.pdf). 
+Information about the sensor is taken from the official [website of Senserion](https://sensirion.com/products/catalog/SEK-SPS30) and the [datahseets](https://sensirion.com/media/documents/8600FF88/64A3B8D6/Sensirion_PM_Sensors_Datasheet_SPS30.pdf). 
 
 ![HS303SENSOR](../../static/img/sensirionsps30.jpeg) _Image from the official Sensirion SPS30 Webpage._
 
 The SPS30 particulate matter sensor, certified by MCERTS, uses laser scattering technology for PM monitoring. This sensor is particularly made for detecting PM2.5—tiny particles up to 2.5 microns in diameter that can penetrate deep into the lungs and cause serious health issues like asthma and cardiovascular disease. The SPS30 plays a crucial role in developing new devices for monitoring air quality and preventing pollution-related health problems.
 
-PM4 and PM10 output values are also provided and calculated based on distribution profile of all measured particles.
+PM4 and PM10 output values are also provided and calculated based on the distribution profile of all measured particles.
 
 Mass concentration precision: 
 
@@ -199,7 +199,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 Now that you have the data collected, it's time to analyze it to answer our questions about air quality monitoring. This guide will provide you with a setup for how to use Google Colaboratory in analyzing your data. 
 
-How to setup Google Colaboratory is added in How To's: [add link here]
+How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate.md).
 
 Google Colab Notebook for temperature exposure data analysis: [Click to Download](./notebooks/UseCase2_AirQuality.ipynb)
 
@@ -207,7 +207,7 @@ Google Colab Notebook for temperature exposure data analysis: [Click to Download
 
 ## Troubleshooting
 
-When developing and adopting sensing technologies, there is a lot of things that might go wrong. Here is a list that includes some of the most common problems: 
+When developing and adopting sensing technologies, there are a lot of things that might go wrong. Here is a list that includes some of the most common problems: 
 
 1. **Incorrect Wiring:** Ensure that the SD card module is wired correctly to the Arduino. Check that the connections are secure and match the pin configurations in your code.
 2. **Power Supply Issues:** SD cards can be sensitive to power supply fluctuations. Make sure your Octopus has a stable power source and sufficient current capacity to power both the Arduino Board and the SD card module.

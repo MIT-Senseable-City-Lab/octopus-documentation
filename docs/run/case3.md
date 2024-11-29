@@ -12,11 +12,11 @@ _Computer Vision Classification with the Octopus_
 
 ## Introduction
 
-In this tutorial we will show how to deploy an octopus that can utilize the power of EdgeAI technologies and run classification models to detect its surroundings! This example gives you an introduction to how to set up software, collect data, train your model, and deploy on the octopus platform. The classification model of flowers can be changes to any kind type of classification or object detection you want! Use the guide as an example to build you own octopus detection model. 
+In this tutorial, we will show how to deploy an octopus that can utilize the power of EdgeAI technologies and run classification models to detect its surroundings! This example gives you an introduction to how to set up the software, collect data, train your model, and deploy on the Octopus platform. The classification model of flowers can be changed to any kind type of classification or object detection you want! Use the guide as an example to build your own octopus detection model. 
 
 :::warning
 
-This guide assumes that you already have built an octopus with a nicla vision board fir image classification.
+This guide assumes that you already have built an octopus with a Nicla Vision board for image classification.
 
 :::
 
@@ -45,15 +45,15 @@ The octopus for image classification consists of these components:
 
 ### Octopus Platform Architecture for Image Classification
 
-Running a classification model on the Nicla Vision creates a whole new architecture for the Octopus. Instead of collecting raw data from the sensors, and uploading the data to google drive and analysing ing google colaboratory, the Arduino Nicla runs a TinyML model on the device itself, and reacts on the environment by changing color. 
+Running a classification model on the Nicla Vision creates a whole new architecture for the Octopus. Instead of collecting raw data from the sensors, uploading the data to Google Drive, and analysing using Google Colaboratory (Colab), the Arduino Nicla runs a TinyML model on the device itself and reacts to the environment by changing color. 
 
-In this case, the Octopus change color if it sees a spesific flower (Daisy or Hydrangeas), or none. 
+In this case, the Octopus changes color if it sees a specific flower (Daisy or Hydrangeas), or none. 
 
 ![Case2Architecture](../../static/img/usecase3.jpg)
 
 1. The Nicla Vision takes a photo
 2. By running a TinyML on the device, it classifies if the octopus sees a Daisy, Hydrangeas, or only background. 
-3. If one of the flowers has a predicted value more than 80%, the Octopus LED will change color. If not, it will be white. 
+3. If one of the flowers has a predicted value of more than 80%, the Octopus LED will change color. If not, it will be white. 
 
 _Note: these values are easily changed in the code if you want to modify the colors!_
 
@@ -80,7 +80,7 @@ TensorFlow™ Lite models for machine learning applications
 
 2. **Memory**
 
-Memory plays a pivotal role in embedded machine learning projects. The Nicla Vision board includes up to 16 MB of QSPI Flash for storage purposes. However, it's important to note that machine learning inferences primarily utilize the MCU's SRAM. The STM32H747, which is shared by both processors, offers only 1MB of SRAM. Additionally, this MCU comes with 2MB of FLASH memory, which is mainly used for storing code.
+Memory plays a pivotal role in embedded machine-learning projects. The Nicla Vision board includes up to 16 MB of QSPI Flash for storage purposes. However, it's important to note that machine learning inferences primarily utilize the MCU's SRAM. The STM32H747, which is shared by both processors, offers only 1MB of SRAM. Additionally, this MCU comes with 2MB of FLASH memory, which is mainly used for storing code.
 
 
 3. **Sensors**
@@ -123,15 +123,15 @@ The first step in any ML project is to define the goal. In this case, it is to d
 
 ![Flowers example](../../static/img/FLOWERS_example.png)
 
-For this example, we will use two white flowers we found at our lab: white daisy, and white hydrangeas. We will also make sure to collect images of a white background with no flowers. 
+For this example, we will use two white flowers we found in our lab: white daisies, and white hydrangeas. We will also make sure to collect images of a white background with no flowers. 
 
 ---
 
 ## Data Collection with OpenMV IDE
 
-After setting a clear goal for your Machine Learning project, the next critical step involves collecting your dataset. This can be accomplished using several tools depending on your setup and requirements. For capturing images, you might consider options like the Edge Impulse Studio, the OpenMV IDE we've installed, or even your smartphone. In this guide we will show how to use the OpenMV IDE to gather the necessary image data for our project.
+After setting a clear goal for your Machine Learning project, the next critical step involves collecting your dataset. This can be accomplished using several tools depending on your setup and requirements. For capturing images, you might consider options like the Edge Impulse Studio, the OpenMV IDE we've installed, or even your smartphone. In this guide, we will show how to use the OpenMV IDE to gather the necessary image data for our project.
 
-First, create in your computer a folder where your data will be saved. For thie example, lets call the folcer "flowers". Next, on the OpenMV IDE, go to `Tools > Dataset Editor` and select `New Dataset` to define the dataset collection:
+First, create in your computer a folder where your data will be saved. For this example, let's call the folder "flowers". Next, on the OpenMV IDE, go to `Tools > Dataset Editor` and select `New Dataset` to define the dataset collection:
 
 ![openmv_1](../../static/img/openmv/openmv_1.png)
 
@@ -147,7 +147,7 @@ Running the `dataset_capture_script.py` and clicking on the camera icon (2), wil
 
 ![openmv_4](../../static/img/openmv/openmv_4.png)
 
-Repeat with the other classes, in this case "white_hydrangeas" and "background": 
+Repeat with the other classes, in this case, "white_hydrangeas" and "background": 
 
 ![openmv_5](../../static/img/openmv/openmv_5.png)
 
@@ -250,7 +250,7 @@ Press [Save parameters] and Generate all features:
 
 In 2007, Google launched MobileNetV1, a series of neural networks optimized for mobile devices, supporting tasks like classification and detection. These models are designed to be small, low-latency, and energy-efficient. In 2018, Google introduced MobileNetV2, which brought advancements such as Inverted Residual Blocks and Linear Bottlenecks, improving performance by capturing more complex features with fewer parameters and improving computational efficiency and accuracy.
 
-MobileNetV1 and V2 both uses depthwise separable convolutions to lower computational costs, but V2 additionally uses a non-linear activation in the expansion layer and retains a linear activation in the bottleneck layer to preserve crucial data. MobileNetV2's architecture is particularly optimized for higher accuracy and efficiency.
+MobileNetV1 and V2 both use depthwise separable convolutions to lower computational costs, but V2 additionally uses a non-linear activation in the expansion layer and retains a linear activation in the bottleneck layer to preserve crucial data. MobileNetV2's architecture is particularly optimized for higher accuracy and efficiency.
 
 To adapt MobileNets for even more specific or constrained use cases, they include a 'width multiplier' parameter (α), which adjusts the network's size and computational load. Edge Impulse Studio supports both MobileNet versions, allowing image inputs of different sizes and various α values to balance accuracy against memory use and latency. For instance, using MobileNetV2 with 160x160 images and α=1.0 maximizes accuracy but requires more resources, while MobileNetV1 with α=0.10 minimizes resource usage.
 
@@ -296,7 +296,7 @@ Here is the Training result:
 
 ![training result](../../static/img/edgeimpulse/training_performance.png)
 
-The result is pretty good with 53ms of latency. However, the confusion matric shows a bias in the dataset where background failed the test, indicating a dataset that is not balanced and robust enough (as mentioned above). Even if the background is classified wrong, we see the values of the flower F1 scores (statistical measure used to evaluate the accuracy of a classification model - the harmonic mean of precision and recall) are good. 
+The result is pretty good with 53ms of latency. However, the confusion matrix shows a bias in the dataset where the background failed the test, indicating a dataset that is not balanced and robust enough (as mentioned above). Even if the background is classified wrong, we see the values of the flower F1 scores (a statistical measure used to evaluate the accuracy of a classification model - the harmonic mean of precision and recall) are good. 
 
 ---
 
@@ -304,7 +304,7 @@ The result is pretty good with 53ms of latency. However, the confusion matric sh
 
 ![edge dataset train](../../static/img/edgeimpulse/edgeDatasetTrain.jpeg)
 
-Now, you should take the data set aside at the start of the project and run the trained model using it as input. The result again shows an error in the dataset where the background-images are not classified correctly, and some uncertain values for white_hydrangeas.
+Now, you should take the data set aside at the start of the project and run the trained model using it as input. The result again shows an error in the dataset where the background images are not classified correctly, and some uncertain values for white_hydrangeas.
 
 ![model testing](../../static/img/edgeimpulse/model_testing.png)
 
@@ -314,22 +314,22 @@ However, we decide to move on and test our model in the real world!
 
 ## Deploying the model in Arduino IDE
 
-Finally we are here, and we can deploy our model on the Octopus! 
+Finally, we are here, and we can deploy our model on the Octopus! 
 
-EdgeImpulse provides two different ways to deploy the trained model on the Nicla Vision Board: as a library, or as a firmware. In this example, we deploy it as an Arduino Library. 
+EdgeImpulse provides two different ways to deploy the trained model on the Nicla Vision Board: as a library, or as firmware. In this example, we deploy it as an Arduino Library. 
 
 1. Move to the "Deployment" page
 2. Search for "Arduino Library"
 3. Make sure the deployment is for `Arduino Nicla Vision`
 4. Push `Build`
 
-Then, on your computer you will have the Arduino Library! 
+Then, on your computer, you will have the Arduino Library! 
 
-5. Upload the library, and run the cketch `nicla_vision_camera.ino` available in Examples undert the library name. 
+5. Upload the library, and run the sketch `nicla_vision_camera.ino` available in Examples under the library name. 
 
 ### Changing the Octopus LED based on classification results
 
-To have the octopus respond with LED colors to the classified values from the model running on yout octopus, therea re a few changes that needs to be done with the file `nicla_vision_camera.ino`. 
+To have the octopus respond with LED colors to the classified values from the model running on your octopus, there are a few changes that need to be done with the file `nicla_vision_camera.ino`. 
 
 First, in the `loop()`, before printing the predicted values to the Serial Monitor, add the code below: 
 ```python
@@ -348,7 +348,7 @@ if (result.classification[1].value > 0.8) {
 ```
 
 
-In the end of your file, add the function `setRGBColor()`: 
+At the end of your file, add the function `setRGBColor()`: 
 
 ```python
 /**
@@ -391,7 +391,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 ## Troubleshooting
 
-When developing and adopting sensing technologies, there is a lot of things that might go wrong. Here is a list that includes some of the most common problems: 
+When developing and adopting sensing technologies, there are a lot of things that might go wrong. Here is a list that includes some of the most common problems: 
 
 1. **Incorrect Wiring:** Ensure that the SD card module is wired correctly to the Arduino. Check that the connections are secure and match the pin configurations in your code.
 2. **Power Supply Issues:** SD cards can be sensitive to power supply fluctuations. Make sure your Octopus has a stable power source and sufficient current capacity to power both the Arduino Board and the SD card module.
@@ -403,7 +403,7 @@ When developing and adopting sensing technologies, there is a lot of things that
 
 :::tip
 
-It is very common to have problems with the USB connection, but dont worry. There are a lot of online forums that can help you troubleshoot your problem, have a look at for example the [Arduino Forum](https://forum.arduino.cc/c/using-arduino/6). 
+It is very common to have problems with the USB connection, but don't worry. There are a lot of online forums that can help you troubleshoot your problem, have a look at for example the [Arduino Forum](https://forum.arduino.cc/c/using-arduino/6). 
 
 :::
 
