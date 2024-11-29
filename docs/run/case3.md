@@ -8,7 +8,7 @@ _Computer Vision Classification with the Octopus_
 
 ---
 
-*Guide inspired by [TimyML made easy](https://mjrovai.github.io/TinyML_Made_Easy_NiclaV_eBook/)*
+*Guide inspired by [TinyML made easy](https://mjrovai.github.io/TinyML_Made_Easy_NiclaV_eBook/)*
 
 ## Introduction
 
