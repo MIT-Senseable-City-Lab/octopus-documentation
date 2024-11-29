@@ -36,8 +36,8 @@ The goals of these projects are:
 This guide assumes that you have assembled an octopus from this tutorial (add a link to the tutorial).
 The octopus for air quality monitoring consists of these components:
 
-- Octopus (link to correct setup tutorial)
-- Arduino IDE
+- [Octopus](../category/build)
+- [Arduino IDE](../build/firmware/Softwareinstallation)
 - Octopus Library installed
 
 ### Octopus Platform Architecture for Heat Exposure

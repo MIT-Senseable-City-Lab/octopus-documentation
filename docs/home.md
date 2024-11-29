@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Home'
+sidebar_label: 'Getting Started'
 sidebar_position: 1
 ---
 
-# Home
+# Getting Started
 
 ---
 
@@ -12,7 +12,9 @@ sidebar_position: 1
 ---
 
 
-
 The Octopus Platform is an open sourced low-cost environmental senging tool made for makers to develop and adapt urban environmental sensing projects. 
 
 Build your own Octopus and engage in the community of environmental sensing!
+
+[ADD IMAGE OF THE OCTOPUS]
+

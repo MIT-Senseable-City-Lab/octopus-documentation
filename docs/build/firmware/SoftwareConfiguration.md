@@ -61,7 +61,5 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
 To choose the serial device corresponding to your board, navigate to the **Tools > Serial Port/Port** menu. If you're unsure which port corresponds to your Arduino board, you can disconnect the board and reopen the menu. The port entry that disappears should be associated with the Arduino board. Reconnect the board and select that serial port from the menu.
 
-**Please Read**
 
-[case about arduino nano 33 ble only having 3.3V, not 5V that is commonly used with the other boards]
 

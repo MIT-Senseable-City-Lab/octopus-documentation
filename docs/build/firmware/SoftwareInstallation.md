@@ -27,7 +27,7 @@ Once the download and installation process is successfully completed, launch the
 
 ![Launch Arduino IDE](../../../static/img/arduinoLaunch.png)
 
-Congratulations! 🎉 You've successfully installed the program. Now you're ready to configure your IDE and start coding! Great job. 😃
+Congratulations! 🎉 You've successfully installed the program. Now you're ready to configure your IDE and start coding! Great job 😃
 
 ## Download and install OpenMV IDE
 

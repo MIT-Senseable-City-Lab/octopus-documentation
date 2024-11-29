@@ -8,7 +8,7 @@ _Computer Vision Classification with the Octopus_
 
 ---
 
-*Guide inspired by [TimyML made easy](https://mjrovai.github.io/TinyML_Made_Easy_NiclaV_eBook/)*
+*Guide inspired by [TinyML made easy](https://mjrovai.github.io/TinyML_Made_Easy_NiclaV_eBook/)*
 
 ## Introduction
 
@@ -37,8 +37,8 @@ The goals for this project are:
 This guide assumes that you have assembled an octopus with a Nicla Vision.
 The octopus for image classification consists of these components:
 
-- Octopus (Nicla Vision version)
-- Arduino IDE
+- [Octopus](/docs/category/build)
+- [Arduino IDE](/docs/build/firmware/Softwareinstallation)
 - Octopus Library installed
 - Account in [Edge Impulse](https://edgeimpulse.com/)
 - OpenMV IDE (for data collection to train your model)

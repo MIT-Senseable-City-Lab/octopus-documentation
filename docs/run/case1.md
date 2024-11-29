@@ -35,8 +35,8 @@ The goals of these projects are:
 
 The octopus for temperature exposure consists of these components:
 
-- [Octopus](../build/)
-- [Arduino IDE](../build/firmware/SoftwareInstallation.md)
+- [Octopus](../category/build)
+- [Arduino IDE](../build/firmware/Softwareinstallation)
 - Octopus Library Installed
 
 ### Octopus Platform Architecture for Temperature Exposure
@@ -352,7 +352,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 Now that you have the data collected, it's time to analyze it to answer our questions about heat exposure. This guide will provide you with a setup for how to use Google Colaboratory in analyzing your data. 
 
-How to setup Google Colaboratory is added in How To's: [How to setup Google Colaboratory](../community/HowTo.md)
+How to setup Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate.md). 
 
 Google Colab Notebook for heat exposure data analysis: <a href="./notebooks/UseCase1_HeatExposure.ipynb" download>Click to Download</a>
 
