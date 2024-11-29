@@ -37,7 +37,7 @@ This guide assumes that you have assembled an octopus from this tutorial (add a 
 The octopus for air quality monitoring consists of these components:
 
 - [Octopus](../category/build)
-- [Arduino IDE](../build/firmware/Softwareinstallation.md)
+- [Arduino IDE](../build/firmware/Softwareinstallation)
 - Octopus Library installed
 
 ### Octopus Platform Architecture for Heat Exposure
