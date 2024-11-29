@@ -37,8 +37,8 @@ The goals for this project are:
 This guide assumes that you have assembled an octopus with a Nicla Vision.
 The octopus for image classification consists of these components:
 
-- [Octopus](../category/build)
-- [Arduino IDE](../build/firmware/Softwareinstallation)
+- [Octopus](/docs/category/build)
+- [Arduino IDE](/docs/build/firmware/Softwareinstallation)
 - Octopus Library installed
 - Account in [Edge Impulse](https://edgeimpulse.com/)
 - OpenMV IDE (for data collection to train your model)
