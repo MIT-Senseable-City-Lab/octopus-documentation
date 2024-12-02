@@ -28,24 +28,26 @@ The design consists of three distinct components, each serving specific function
 
 ## List of Parts
 
+
+
 | File Name   | Image       | Supports?   | Printing Time   | Download    |
 | ----------- | ----------- | ----------- | --------------- | ----------- |
-| *octopus-top.stl*      | ![Head](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/imgs/otopus_top-layer_perspective.png)      | Title       | Title           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top.stl)      |
-| *octopus-bottom.stl*   |  ![Legs](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/imgs/otopus_bottom-layer_perspective.png)      | Title       | Title           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
-| *octopus-middle.stl **(optional)***  |  ![Optional Sensing](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/imgs/otopus_middle-layer_perspective.png)       | Title       | Title           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
+| *octopus-top.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer_perspective.png)     | Title       | Title           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top.stl)      |
+| *octopus-bottom.stl*   |  ![Legs](../../static/img/octopus-imgs/otopus_bottom-layer_perspective.png)      | Title       | Title           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
+| *octopus-middle.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_middle-layer_perspective.png)       | Title       | Title           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
 
 
 
 ## 3D Printing 
-### Material and Suggested Settings
+### Suggested Settings
 
 :::tip
 
-**Printing in white or light colors is recommended to minimize heat absorption and prevent overheating of internal components, especially for outdoor or high-temperature environments.** 
+Printing in **white or light colors** is recommended to **minimize heat absorption** and **prevent overheating of internal components**, especially for outdoor or high-temperature environments. 
 :::
 
 
-### Printer Settings
+#### Printer Settings
 - **Layer Height:** 0.2 mm (recommended for standard quality) 
 - **Wall Thickness:** 1.2 mm
 - **Infill Density:** 10%-20% (adjust based on strength requirements)
