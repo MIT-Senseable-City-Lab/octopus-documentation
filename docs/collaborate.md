@@ -7,15 +7,9 @@ sidebar_position: 5
 
 ---
 
-# 🔬 Research
-
-*Papers TBA*
-
----
-
 # ⬆️ Pull Request Guide
 
-_How to contribute to the Octopus Platform_
+_How to contribute to the Octopus project_
 
 ---
 
@@ -40,27 +34,11 @@ For a visual reference to the same process, please see [Nemgrea’s video guide]
 10. Give a title for your pull request and fill out the form.
 11. Click Create Pull Request. This will submit your request, and will manually be reviewed by developers at Senseable City Lab.
 
-
-
 ---
 
+# 🔬 Research 
 
-# ❗ Troubleshooting
-
-_Possible challenges with the Octopus_
-
-
----
-
-
-:::info
-
-
-This document will be extended based on challenges and issues encountered by the octopus community. 
-
-
-:::
-
+*Papers TBA*
 
 
 ---
