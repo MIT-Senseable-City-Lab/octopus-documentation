@@ -8,9 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/move.svg').default,
     description: (
       <>
-        Octopus was designed from the ground to be a personal urban sensing
-        platform made for makers and enthusiasts to collect hyperlocal
-        environmental data with a mobile platform.
+        Octopus is designed to be a personal urban sensing platform made for
+        makers and enthusiasts to collect hyperlocal environmental data.
       </>
     ),
   },
@@ -19,8 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/provision.svg').default,
     description: (
       <>
-        The octopus lets you deploy the platform with a variety of use cases,
-        and can be used in very different...
+        The Octopus lets you deploy the platform with different strategies,
+        collecting a variety of environmental data.
       </>
     ),
   },
@@ -29,8 +28,7 @@ const FeatureList = [
     Svg: require('@site/static/img/pencil.svg').default,
     description: (
       <>
-        Extend of costumize your octopus by using the Octopus Library and API
-        provided.
+        Extend of costumize your octopus by using the Octopus Library and API.
       </>
     ),
   },

@@ -3,16 +3,28 @@ sidebar_label: 'Troubleshoot'
 sidebar_position: 4
 ---
 
-# Troubleshoot
+
+# Troubleshooting
+
+_Possible challenges with the Octopus_
+
 
 ---
 
-*What if we could empower communities to monitor their environment by making fabrication processes accessible for all, fostering a maker-centric approach?*
 
----
-
+:::info
 
 
-The Octopus Platform is an open sourced low-cost environmental senging tool made for makers to develop and adapt urban environmental sensing projects. 
+This document will be extended based on challenges and issues encountered by the Octopus community 
 
-Build your own Octopus and engage in the community of environmental sensing!
+
+:::
+
+
+
+# Mechanics
+
+
+# Connectivity
+
+# Power
