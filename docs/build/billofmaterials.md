@@ -27,7 +27,7 @@ Overview of all hardware components possible to add to the octopus:
 | Arduino Nano 33 BLE Sense Rev 2 | Arduino microcontroller board  | [link](https://store.arduino.cc/products/arduino-nano-33-ble) |
 | Arduino Nicla Vision | Arduino Pro microcontroller board | [link](https://store.arduino.cc/products/nicla-vision) |
 | SPS30 | Particulate matter evaluation kit | [link](https://sensirion.com/products/catalog/SEK-SPS30) |
-| GPS | GPS-18037 | [link](https://www.mouser.mx/ProductDetail/SparkFun/GPS-18037?qs=rQFj71Wb1eUM7j0Oxt1D1A%3D%3D&mgh=1&vip=1&utm_id=17633969509&gad_source=1&gclid=Cj0KCQiAoae5BhCNARIsADVLzZdcZ2ZanU2UDGkh5lrSBZskUVBFUGK0qr-DrMdrjoNtE6K1AX5rSW4aAk0pEALw_wcB) |
+| GPS | GPS-15210 | [link](https://www.digikey.nl/nl/products/detail/sparkfun-electronics/GPS-15210/10064422?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS&utm_term=&productid=10064422&utm_content=&utm_id=go_cmp-19662899439_adg-_ad-__dev-c_ext-_prd-10064422_sig-CjwKCAiA0rW6BhAcEiwAQH28IirRQWJAN0mfAIAmgZzMIgX9HwwFu55MEFqc6QxFvuBYOKGDAZJENRoC9_gQAvD_BwE&gad_source=1&gclid=CjwKCAiA0rW6BhAcEiwAQH28IirRQWJAN0mfAIAmgZzMIgX9HwwFu55MEFqc6QxFvuBYOKGDAZJENRoC9_gQAvD_BwE&gclsrc=aw.ds) |
 | Lithium Battery | Lightwaited battery based on Lithium Ion chemistry. Order size of the battery related to your specific use case. | [link](https://www.sparkfun.com/products/13851) |
 | SD Card | SD card to store collected data (List from Amazon). | [link](https://www.amazon.com/micro-sd-card/s?k=micro+sd+card) |
 
