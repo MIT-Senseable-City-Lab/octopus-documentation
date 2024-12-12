@@ -48,7 +48,7 @@
 **/
 
 [data-theme='dark'] {
-  --ifm-color-primary: #514C7F;             /* Slightly lighter primary color for better visibility */
+  --ifm-color-primary: #635e8f;             /* Slightly lighter primary color for better visibility */
   --ifm-color-primary-lightest: #AAA2FF;    /* Lightest shade for highlights */
   --ifm-color-primary-lighter: #8079A9;     /* Second lightest, good for less prominent UI elements */
   --ifm-color-primary-light: #5D4FE8;       /* Bright and vibrant for attention */

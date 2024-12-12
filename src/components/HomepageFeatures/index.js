@@ -1,5 +1,7 @@
+import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import { useColorMode } from '@docusaurus/theme-common'; // Import the theme context
 import styles from './styles.module.css';
 
 const FeatureList = [
@@ -28,17 +30,21 @@ const FeatureList = [
     Svg: require('@site/static/img/pencil.svg').default,
     description: (
       <>
-        Extend of costumize your octopus by using the Octopus Library and API.
+        Extend or customize your octopus by using the Octopus Library and API.
       </>
     ),
   },
 ];
 
 function Feature({ Svg, title, description }) {
+  const { colorMode } = useColorMode();
+  const svgColor = colorMode === 'dark' ? '#ffffff' : '#000000'; // Adjust colors as needed
+
   return (
     <div className={clsx('col col--4')}>
       <div className='text--center'>
-        <Svg className={styles.featureSvg} role='img' />
+        <Svg className={styles.featureSvg} role='img' fill={svgColor} />{' '}
+        {/* Set fill color */}
       </div>
       <div className='text--center padding-horiz--md'>
         <Heading as='h3'>{title}</Heading>
