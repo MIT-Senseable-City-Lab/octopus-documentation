@@ -1,10 +1,10 @@
 ---
-sidebar_label: 'Troubleshoot'
+sidebar_label: 'FAQ'
 sidebar_position: 4
 ---
 
 
-# Troubleshooting
+# FAQ
 
 _Possible challenges with the Octopus_
 
