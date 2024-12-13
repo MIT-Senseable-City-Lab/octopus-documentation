@@ -17,16 +17,8 @@ _Octopus electronics_
 
 ![PCB3](../../static/img/electronics/E8F904C6-C29B-4F63-A34A-5B6C7296A69D.png)
 
-# Harnesses
-
-*add image of cables*
 
 # Files
 
-schematics
-
-KiCad file with embedded component libraries
-
-gerbers and centroid files
-
-buy electronics from turnkey services: pcbway, jlcpcb
+Gerberfiles, schematics and BOM can be found in the github repository here: 
+https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware
