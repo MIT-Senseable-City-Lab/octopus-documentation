@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # 🏔️ Overview
 
-_Introduction to the device._
+_Get started_
 
 ---
 
@@ -42,7 +42,7 @@ ___
 
 # 3 setup examples
 
-The Octopus is developed for three use cases in mind with different skill requirements. 
+The Octopus is developed for three use cases in mind with different skill requirements. But before diving into the use cases, make sure to build an octopus!
 
 :::info
 
@@ -55,7 +55,6 @@ All the different Use Cases can be found in the [Run](../category/run/) folder. 
 2. [Air quality Monitoring](../run/case2.md) (medium). 
 3. [Flower (Image) Classification](../run/case3.md) (hard). 
 
-![Usecases](@site/static/img/usecases.png)
 
 
 

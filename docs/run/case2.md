@@ -364,7 +364,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 Now that you have the data collected, it's time to analyze it to answer our questions about air quality monitoring. This guide will provide you with a setup for how to use Google Colaboratory in analyzing your data. 
 
-How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate.md).
+How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate#data-analysis-software).
 
 Google Colab Notebook for temperature exposure data analysis: [Click to Download](./notebooks/UseCase2_AirQuality.ipynb)
 
