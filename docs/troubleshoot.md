@@ -21,10 +21,3 @@ This document will be extended based on challenges and issues encountered by the
 :::
 
 
-
-# Mechanics
-
-
-# Connectivity
-
-# Power
