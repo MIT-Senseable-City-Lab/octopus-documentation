@@ -9,7 +9,7 @@ _Parts_
 
 ---
 
-Below, we provide you with the full list of physical components that are compatible with the octopus.
+Below, we provide you with the full list of physical components that are compatible with the octopus. These can be divided in three parts: how to prepare and order the PCB, other hardware electronics and sensors, and materials for the bodyframe. 
 
 
 :::info
@@ -17,6 +17,19 @@ Below, we provide you with the full list of physical components that are compati
 Note that all links provided are examples we know will work to build the octopus, but it does not exclude other providers of manufacturers.
 
 :::
+
+### PCB setup
+
+![OctopuPCB](../../static/img/electronics/OctopusPCB.png)
+ 
+The costum PCB can be set up to ways: 
+1. Order the board from a manufacturing company and ask them to pre-solder the components for you. 
+2. Order the board and all small hardware components separately, and solder it by hand. *Note, this requires you to know how to solder small components.*
+
+In any case, you can find all the Gerberfiles, schematics and BOM files needed to order and solder the Octopus PCB: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware
+
+*See [Electronics (files)](../build/electronics.md) for more information.*
+
 
 ### Hardware components
 
@@ -41,12 +54,4 @@ Components you need to order to build the body frame:
 
 **Note**: To attatch the bodyframe to other surfaces you need to buy other components. Possible attatchments can be anything with a basic gopro mount (like a tripod), rubberbands, magnets, or strings. 
 
-
-
-
-### Hardware components to solder (if needed)
-Assuming you are soldering an octopus with all parts included, download this Excel File for the overview of components:
-
-
-[Download overview Excel File here](../../static/files/Updated_BOM_OCTOPUS.xlsx)
 

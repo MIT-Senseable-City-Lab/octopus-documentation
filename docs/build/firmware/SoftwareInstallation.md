@@ -32,7 +32,7 @@ Congratulations! 🎉 You've successfully installed the program. Now you're read
 ## Download and install OpenMV IDE
 
 :::info
-OpenMV is needed for example [Flower (Image) classification](../../cases/case3.md). 
+OpenMV is only needed for use Case [Flower (Image) classification](../../run/case3.md). 
 
 :::
 
