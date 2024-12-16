@@ -16,6 +16,10 @@ The design consists of three distinct components, each serving specific function
 **1. Top layer (head):**
 - Houses the PCB (and temperature sensor) and an integrated cooling fan.
 - Acts as the top cover for the device, providing access to essential electronic components.
+- **Variations:**
+     - One variation is tailored for the **Arduino Nano BLE Sense**, and does not include a hole at the top.
+     - Another variation accommodates the **Arduino Nicla**, featuring a hole to integrate a camera module.
+
 
 **2. Bottom layer (legs):** 
 - Encases the battery and GPS module.
@@ -32,18 +36,19 @@ The design consists of three distinct components, each serving specific function
 
 | File Name   | Image       | Supports?   | Printing Time   | Download    |
 | ----------- | ----------- | ----------- | --------------- | ----------- |
-| *octopus-top.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer_perspective.png)     | Title       | Title           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top.stl)      |
-| *octopus-bottom.stl*   |  ![Legs](../../static/img/octopus-imgs/otopus_bottom-layer_perspective.png)      | Title       | Title           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
-| *octopus-middle.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_middle-layer_perspective.png)       | Title       | Title           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
+| *octopus_top_nano.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer_perspective.png)     | Recommended       |  2h15min           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nano.stl)      |
+| *octopus_top_nikla.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective.png)     | Recommended       | 2h10min           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nikla.stl)      |
+| *octopus_bottom.stl*   |  ![Legs](../../static/img/octopus-imgs/otopus_bottom-layer_perspective.png)      | Recommended       | 2h30min          | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
+| *octopus_middle.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_middle-layer_perspective.png)       | Needed       | Approx. 2h30min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
 
 
 
 ## 3D Printing 
 ### Suggested Settings
 
-:::tip
+:::info
 
-Printing in **white or light colors** is recommended to **minimize heat absorption** and **prevent overheating of internal components**, especially for outdoor or high-temperature environments. 
+Printing in **white or light colors** is strongly recommended to **minimize heat absorption** and **prevent overheating of internal components**, especially for outdoor or high-temperature environments. 
 :::
 
 
@@ -55,7 +60,14 @@ Printing in **white or light colors** is recommended to **minimize heat absorpti
 - **Support Type:** Tree (auto), with overhang angle set to 30°
 
 
-### Supports
+### Placement
 
-*add image of the support layers*
 
+It is generally recommended to place the components in a way that **minimizes supports** to **minimize printing time**  and **maintain the structural integrity of the parts**.
+
+The suggested placement of components on the print bed is as follows: 
+
+
+![Component Placement](../../static/img/printing-placement.png)
+
+<!-- ### Supports -->
