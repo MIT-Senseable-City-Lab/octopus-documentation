@@ -16,12 +16,12 @@ const config = {
   url: 'https://MIT-Senseable-City-Lab.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus_octopus/', // this changed from docusaurus-octopus
+  baseUrl: '/octopus-documentation/', // this changed from docusaurus-octopus
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'MIT-Senseable-City-Lab.github.io', // Usually your GitHub org/user name.
-  projectName: 'octopus', // Usually your repo name. // this changed from docusaurus_octopus
+  projectName: 'octopus-documentation', // Usually your repo name. // this changed from docusaurus_octopus
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
