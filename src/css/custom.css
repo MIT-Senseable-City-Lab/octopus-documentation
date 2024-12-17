@@ -29,6 +29,7 @@
   --ifm-color-primary-darker: #15122F;       /* Even darker shade */
   --ifm-color-primary-darkest: #0F0D20;      /* Darkest shade */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-link-color:#8079A9; 
 }
 
 
@@ -48,7 +49,7 @@
 **/
 
 [data-theme='dark'] {
-  --ifm-color-primary: #514C7F;             /* Slightly lighter primary color for better visibility */
+  --ifm-color-primary: #635e8f;             /* Slightly lighter primary color for better visibility */
   --ifm-color-primary-lightest: #AAA2FF;    /* Lightest shade for highlights */
   --ifm-color-primary-lighter: #8079A9;     /* Second lightest, good for less prominent UI elements */
   --ifm-color-primary-light: #5D4FE8;       /* Bright and vibrant for attention */

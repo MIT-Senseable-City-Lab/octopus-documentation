@@ -11,22 +11,14 @@ _Octopus electronics_
 
 # PCB
 
-![PCB1](../../static/img/electronics/06F1EC87-BFE8-4A66-AC7B-8B9FD069CFB9.png)
+![OctopuPCB](../../static/img/electronics/OctopusPCB.png)
+ 
+The costum PCB can be set up to ways: 
+1. Order the board from a manufacturing company and ask them to pre-solder the components for you. 
+2. Order the board and all small hardware components separately, and solder it by hand. *Note, this requires you to know how to solder small components.*
 
-![PCB2](../../static/img/electronics/D8130F65-DBB6-4158-8678-752EF8D0677F.png)
-
-![PCB3](../../static/img/electronics/E8F904C6-C29B-4F63-A34A-5B6C7296A69D.png)
-
-# Harnesses
-
-*add image of cables*
 
 # Files
 
-schematics
-
-KiCad file with embedded component libraries
-
-gerbers and centroid files
-
-buy electronics from turnkey services: pcbway, jlcpcb
+Gerberfiles, schematics and BOM can be found in the github repository here: 
+https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware

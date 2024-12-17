@@ -15,6 +15,19 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
 ---
 
+## Download Octopus Firmware
+
+To start programming your octopus, you need to install the Octopus Firmware. 
+Go to library manager, and search Octopus: 
+
+![Octopus Library](../../../static/img/electronics/octopus-library.png)
+
+Click **Download**. As the Octopus Firmware is dependent on other libraries, you will get a pop up window asking you to download the other packages. Click **Install all**. 
+
+![Octopus Downloads](../../../static/img/electronics/octopus-download.png)
+
+
+
 ## Add the boards to your Arduino IDE
 
 <Tabs>
@@ -31,7 +44,7 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
     **Open your fist sketch**
 
-    Open the HelloOctopus example sketch: **File > Examples > Octopus Nano > HelloOctopus**. The sketch will appear in a new window.
+    Open the octopus sample sketch: **File > Examples > Octopus Firmware > octopus_sample**. The sketch will appear in a new window.
 
     **Select your board type and port**
 
@@ -47,15 +60,7 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
      ![Nicla Board](../../../static/img/niclaBoard.png)
 
-     ## Installing Drivers for the Boards
-
-     With the Mbed OS core installed you can procees with the driver installation.
-
-    **Open your fist sketch**
-
-    [input guide with OpenMV]?
-
-    **Tools > Board > ArduinoMbed OS Nicla Boards > Arduino Nicla Vision**
+     To setup the Nicla Vision, have a look at [Flower (Image) Classification](../../run/case3.md) example. 
   </TabItem>
 </Tabs>
 

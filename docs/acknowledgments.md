@@ -29,17 +29,12 @@ All materials are released under MIT license.
 
 # 💜 Thanks
 
-On behalf of the Octopus team, we want to thank our members of the MIT Senseable City Lab Consortium;
+Than you to the Octopus team Chada Elalami, Åse Håtveit, Oluwatobi Oyinlola, Andrei Speridião, Simone Mora, Titus Venverloo, Fábio Duarte.  
 
-**Companies** 
+---
 
-Dubai Future Foundation, Toyota, UnipolTech, Consiglio per la Ricerca in Agricoltura e l’Analisi dell’Economia Agraria, Tele2, Volkswagen Group America, FAE Technology, Fédération Internationale de l’Automobile. 
+On behalf of the Octopus team, we want to thank AMS and Dubai Future foundation. 
 
 
-**Research Partners**
+We also want to thank the members of the MIT Senseable City Lab Consortium Toyota, UnipolTech, Consiglio per la Ricerca in Agricoltura e l’Analisi dell’Economia Agraria, Tele2, Volkswagen Group America, FAE Technology, Fédération Internationale de l’Automobile. 
 
-Kyoto University, SMART - Singapore-MIT Alliance for Research and Technology, KAIST Center for Advanced Urban Systems, Universidad Autónoma de Occidente, Instituto Politecnico Nacional, Imperial College London, Università di Pisa, KTH Royal Institute of Technology, AMS Institute
-
-**Cities and Regions**
-
-Rio de Janeiro, Emilia-Romagna, Stockholm, Amsterdam

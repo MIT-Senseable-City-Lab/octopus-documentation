@@ -97,7 +97,7 @@ If you want to read more about the HS3003 sensor you can take a look at the [dat
 
 1.**Octopus Setup**
 
- Open Arduino IDE, click on **Libraries** tab and search for **Octopus** --> **Examples**, open **octopus_Nano** --> **temp_octopus**.
+ Open Arduino IDE, click on **Libraries** tab and search for **Octopus** --> **Examples**, open **octopus_Nano** --> **octopus_sample**.
 
 2.**Connect the board**
 
@@ -109,19 +109,17 @@ If you want to read more about the HS3003 sensor you can take a look at the [dat
 
 
 <details>
-   <summary><strong>temp_octopus.ino</strong>: show the whole file</summary>
+   <summary><strong>octopus_sample.ino</strong>: show the whole file</summary>
 
 
-   ```py title="temp_octopus.ino"
-#include "octopus.h"
-
+   ```py title="octopus_sample.ino"
+#include "Octopus_Firmware.h"
 
 unsigned long previousMillis = 0;
-const long interval = 1000; // Interval in milliseconds
+const long interval = 5000; // Interval in milliseconds
 unsigned long blinkInterval = 100; // Blinking interval in milliseconds
 unsigned long lastBlinkMillis = 0;
 bool isBlinkOn = false;
-
 
 // Button state variables
 const int buttonPin = 7;  // Pin connected to the button
@@ -130,235 +128,191 @@ bool longPressHandled = false; // To ensure long press is handled once
 unsigned long buttonPressTime = 0;
 const unsigned long longPressDuration = 2000; // Duration to consider as long press (2000ms)
 
+const int RECORDS_PER_FILE = 10;
+const int vbatPin = A0;         
+const int chargeStatePin = 7;  
 
-// Define the number of records per file
-const int RECORDS_PER_FILE = 100;
+const float coldThreshold = 20.0; 
+const float hotThreshold = 25.0;  
 
-
-const int vbatPin = A0;         // Pin connected to VBAT_MEAS
-const int chargeStatePin = 7;   // Pin connected to Charge_state
-
-
-// Temperature thresholds
-const float coldThreshold = 20.0; // Below 20°C is considered cold
-const float hotThreshold = 25.0;  // Above 25°C is considered hot
-
+// Sensor availability flags
+bool sps30Available = false;
+bool gpsAvailable = false;
 
 void setup() {
-   Serial.begin(9600);
-   while (!Serial);
+    Serial.begin(9600);
+    Serial.println("Starting Octopus Device...");
 
+    // Initialize sensors
+    Serial.println("Initializing sensors...");
+    if (!Octopus::initializeSensors()) {
+        Serial.println("Failed to initialize sensors. Continuing...");
+    } else {
+        Serial.println("Sensors initialized.");
+    }
+  // Attempt to initialize GPS
+    Serial.println("Initializing GPS...");
+    gpsAvailable = Octopus::initializeGPS();
+    if (!gpsAvailable) {
+        Serial.println("GPS not detected.");
+    } else {
+        Serial.println("GPS initialized.");
+    }
 
-   // Display welcome message
-   Serial.println("Welcome to Octopus Device\nA project by MIT\nHappy Hacking!\n");
+    // Attempt to initialize SPS30
+    Serial.println("Initializing SPS30...");
+    sps30Available = Octopus::initializeSPS30();
+    if (!sps30Available) {
+        Serial.println("SPS30 not detected.");
+    } else {
+        Serial.println("SPS30 initialized.");
+    }
 
+    // Continue startup even if sensors failed
+    Serial.println("Starting data collection...");
+    if (!Octopus::start()) {
+        Serial.println("Failed to start data collection.");
+    } else {
+        Serial.println("Data collection started.");
+    }
+ // Initialize SD card
+    Serial.println("Initializing SD card...");
+    initSD(RECORDS_PER_FILE);
+    Serial.println("SD card initialized.");
 
-   // Initialize sensors
-   Serial.println("Initializing sensors...");
-   if (!Octopus::initializeSensors()) {
-       Serial.println("Failed to initialize HS300x sensors.");
-       while (1);
-   }
-   if (!Octopus::initializeSPS30()) {
-       Serial.println("Failed to initialize SPS30 sensor.");
-       while (1);
-   }
-   Serial.println("Sensors initialized.");
+    initBatteryMonitoring();
 
-
-   Octopus::setInterval(interval); // sets the interval for data logging
-
-
-   // Begin continuous reading of all sensors
-   Serial.println("Starting data collection...");
-   if (!Octopus::start()) {
-       Serial.println("Failed to start data collection.");
-       while (1);
-   }
-   Serial.println("Data collection started.");
-
-
-   // Initialize SD card
-   initSD(RECORDS_PER_FILE);
-   Serial.println("SD card initialized.");
-
-
-   // Initialize battery monitoring and RGB LED
-   initBatteryMonitoring();
-
-
-   // Initialize button
-   pinMode(buttonPin, INPUT_PULLUP); // Set the button pin as an input with internal pull-up resistor
+    pinMode(buttonPin, INPUT_PULLUP);
+    Serial.println("Setup complete.");
 }
-
 
 void loop() {
-   unsigned long currentMillis = millis();
+    unsigned long currentMillis = millis();
 
+    int buttonState = digitalRead(buttonPin);
+    if (buttonState == LOW) {
+        if (buttonPressTime == 0) {
+            buttonPressTime = millis();
+        }
 
-   // Button handling
-   int buttonState = digitalRead(buttonPin);
-   if (buttonState == LOW) {
-       if (buttonPressTime == 0) {
-           buttonPressTime = millis(); // Record the time when the button is pressed
-       }
+        if ((millis() - buttonPressTime) >= longPressDuration) {
+            if (!longPressHandled) {
+                deviceOn = false;
+                Serial.println("Device turned off");
+                setDotStarColor(0, 0, 0);
+                if (sps30Available) {
+                    Octopus::stopSPS30();
+                }
+                delay(100);
+                longPressHandled = true;
+            }
+        }
+    } else {
+        if (buttonPressTime != 0) {
+            if (!longPressHandled) {
+                deviceOn = true;
+                Serial.println("Device turned on");
+                initSD(RECORDS_PER_FILE);
+                initBatteryMonitoring();
+                if (sps30Available) {
+                    Octopus::initializeSPS30();
+                }
+            }
+            buttonPressTime = 0;
+            longPressHandled = false;
+            delay(50);
+        }
+    }
 
+    if (!deviceOn) {
+        delay(100);
+        return;
+    }
 
-       // Check for long press
-       if ((millis() - buttonPressTime) >= longPressDuration) {
-           if (!longPressHandled) {
-               deviceOn = false;
-               Serial.println("Device turned off");
-               setDotStarColor(0, 0, 0); // Turn off LED
-               Octopus::stopSPS30(); // Stop SPS30 measurement
-               delay(100); // Debounce delay
-               longPressHandled = true;
-           }
-       }
-   } else {
-       // Button released
-       if (buttonPressTime != 0) {
-           if (!longPressHandled) {
-               // Short press
-               deviceOn = true;
-               Serial.println("Device turned on");
-               // Reinitialize components when device turns on
-               initSD(RECORDS_PER_FILE);
-               initBatteryMonitoring();
-               Octopus::initializeSPS30(); // Start SPS30 measurement
-           }
-           buttonPressTime = 0; // Reset button press time
-           longPressHandled = false; // Reset long press handled flag
-           // Debounce delay
-           delay(50);
-       }
-   }
+    if (currentMillis - previousMillis >= interval) {
+        previousMillis = currentMillis; 
 
+        // Get GPS time if available
+        String gpsTime = "N/A";
+        if (gpsAvailable) {
+            gpsTime = Octopus::getGPSTime();
+        }
 
-   if (!deviceOn) {
-       // Device is turned off, skip the rest of the loop
-       delay(100);
-       return;
-   }
+        // Read GPS data if available
+        float latitude = 0, longitude = 0, altitude = 0;
+        if (gpsAvailable) {
+            if (!Octopus::readGPSData(latitude, longitude, altitude)) {
+                Serial.println("Failed to read GPS data");
+            }
+        }
 
+        // Read other sensor data
+        float temperature = Octopus::readTemperature();
+        float humidity = Octopus::readHumidity();
 
-   if (currentMillis - previousMillis >= interval) {
-       previousMillis = currentMillis; // Save the last time data was saved
+        // Read SPS30 data if available
+        float pm1_0 = 0, pm2_5 = 0, pm4_0 = 0, pm10_0 = 0;
+        if (sps30Available) {
+            if (!Octopus::readSPS30Data(pm1_0, pm2_5, pm4_0, pm10_0)) {
+                Serial.println("Failed to read SPS30 data");
+            }
+        }
 
+        // Log the data (Include placeholders or skip the SPS30 values if not available)
+        String data = gpsTime + "," + String(latitude, 7) + "," + String(longitude, 7) + "," + temperature + "," + humidity;
+        if (sps30Available) {
+            data += "," + String(pm1_0) + "," + String(pm2_5) + "," + String(pm4_0) + "," + String(pm10_0);
+        } else {
+            data += ",N/A,N/A,N/A,N/A";  // Placeholder if SPS30 data is unavailable
+        }
+        logToSD(data);
 
-       // Read all the sensor values
-       float temperature = Octopus::readTemperature();
-       float humidity = Octopus::readHumidity();
+        // Print the data to the Serial monitor
+        Serial.print("GPS Time: ");
+        Serial.println(gpsTime);
+        Serial.print("Latitude: ");
+        Serial.println(latitude, 7);
+        Serial.print("Longitude: ");
+        Serial.println(longitude, 7);
+      
+        // Battery monitoring and RGB LED control
+        int vbatRaw = analogRead(vbatPin);
+        float vbatVoltage = vbatRaw * (3.294 / 1023.0) * 1.279;
+        bool chargeState = digitalRead(chargeStatePin);
+        bool batteryConnected = vbatVoltage > 2.5;
+        float batteryPercentage = batteryConnected ? calculateBatteryPercentage(vbatVoltage) : 0.0;
 
+        if (temperature < coldThreshold) {
+            setDotStarColor(0, 0, 255); 
+        } else {
+            setDotStarColor(128, 0, 128); 
+        }
 
-       // Read SPS30 data
-       float pm1_0 = 0, pm2_5 = 0, pm4_0 = 0, pm10_0 = 0;
-       if (!Octopus::readSPS30Data(pm1_0, pm2_5, pm4_0, pm10_0)) {
-           Serial.println("Failed to read SPS30 data");
-       }
+        if (vbatVoltage < 2.5 || !batteryConnected) {
+            if (currentMillis - lastBlinkMillis >= blinkInterval) {
+                lastBlinkMillis = currentMillis;
+                isBlinkOn = !isBlinkOn;
+                if (isBlinkOn) {
+                    setDotStarColor(255, 0, 0); 
+                } else {
+                    setDotStarColor(0, 0, 0);
+                }
+            }
+        }
 
+        Serial.print("VBAT Voltage: ");
+        Serial.print(vbatVoltage, 2);
+        Serial.print(" V, Charge State: ");
+        Serial.print(chargeState ? "Charging" : "Not Charging");
+        Serial.print(", Battery Percentage: ");
+        Serial.print(batteryPercentage, 1);
+        Serial.println(" %");
 
-       // Get current time
-       unsigned long currentTime = millis();
-       unsigned long seconds = currentTime / 1000;
-       unsigned long minutes = seconds / 60;
-       unsigned long hours = minutes / 60;
+        Serial.println();
+    }
 
-
-       // Format time
-       String timestamp = String(hours) + ":" + String(minutes % 60) + ":" + String(seconds % 60);
-
-
-       // Print time and sensor values
-       Serial.print("Time: ");
-       Serial.println(timestamp);
-
-
-       Serial.print("Temperature = ");
-       Serial.print(temperature);
-       Serial.println(" °C");
-
-
-       Serial.print("Humidity = ");
-       Serial.print(humidity);
-       Serial.println(" %");
-
-
-       Serial.print("PM1.0 = ");
-       Serial.print(pm1_0);
-       Serial.println(" µg/m³");
-
-
-       Serial.print("PM2.5 = ");
-       Serial.print(pm2_5);
-       Serial.println(" µg/m³");
-
-
-       Serial.print("PM4.0 = ");
-       Serial.print(pm4_0);
-       Serial.println(" µg/m³");
-
-
-       Serial.print("PM10.0 = ");
-       Serial.print(pm10_0);
-       Serial.println(" µg/m³");
-
-
-       // Battery monitoring and RGB LED control
-       int vbatRaw = analogRead(vbatPin);
-       float vbatVoltage = vbatRaw * (3.294 / 1023.0) * 1.279; // Adjust the scaling factor if needed
-       bool chargeState = digitalRead(chargeStatePin);
-       bool batteryConnected = vbatVoltage > 2.5;
-       float batteryPercentage = batteryConnected ? calculateBatteryPercentage(vbatVoltage) : 0.0;
-
-
-       // Set RGB LED based on temperature
-       if (temperature < coldThreshold) {
-           setDotStarColor(0, 0, 255); // Blue for cold
-       } else {
-           setDotStarColor(128, 0, 128); // Purple for moderate or hot
-       }
-
-
-       // Blink red LED for low battery or no battery
-       if (vbatVoltage < 2.5 || !batteryConnected) {
-           if (currentMillis - lastBlinkMillis >= blinkInterval) {
-               lastBlinkMillis = currentMillis;
-               isBlinkOn = !isBlinkOn;
-               if (isBlinkOn) {
-                   setDotStarColor(255, 0, 0); // Red
-               } else {
-                   setDotStarColor(0, 0, 0); // Off
-               }
-           }
-       }
-
-
-       // Log data to SD card
-       String data = timestamp + "," + temperature + "," + humidity + "," + pm1_0 + "," + pm2_5 + "," + pm4_0 + "," + pm10_0 + "," + vbatVoltage + "," + (chargeState ? "1" : "0");
-       logToSD(data);
-
-
-       // Print the battery and charge state information
-       Serial.print("VBAT Voltage: ");
-       Serial.print(vbatVoltage, 2);
-       Serial.print(" V, Charge State: ");
-       Serial.print(chargeState ? "Charging" : "Not Charging");
-       Serial.print(", Battery Percentage: ");
-       Serial.print(batteryPercentage, 1);
-       Serial.println(" %");
-
-
-       // Print an empty line
-       Serial.println();
-   }
-
-
-   // Wait for a short time before the next iteration
-   delay(100); // You can adjust this delay according to your needs
+    delay(100);
 }
-
-
 ```
 </details>
 
@@ -392,7 +346,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 Now that you have the data collected, it's time to analyze it to answer our questions about heat exposure. This guide will provide you with a setup for how to use Google Colaboratory in analyzing your data.
 
-How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate.md).
+How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate#data-analysis-software).
 
 Google Colab Notebook for heat exposure data analysis: <a href="./notebooks/UseCase1_HeatExposure.ipynb" download>Click to Download</a>
 
