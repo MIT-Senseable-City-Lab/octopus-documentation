@@ -58,7 +58,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg', // TODO: change the social card!
+      image: 'img/octopus-social-card.jpeg', // TODO: change the social card!
       navbar: {
         logo: {
           alt: 'Senseable City Lab',
