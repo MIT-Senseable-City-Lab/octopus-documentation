@@ -16,12 +16,12 @@ const config = {
   url: 'https://MIT-Senseable-City-Lab.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus_octopus/',
+  baseUrl: '/octopus/', // this changed from docusaurus-octopus
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'MIT-Senseable-City-Lab.github.io', // Usually your GitHub org/user name.
-  projectName: 'docusaurus_octopus', // Usually your repo name.
+  projectName: 'octopus', // Usually your repo name. // this changed from docusaurus_octopus
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -58,7 +58,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/docusaurus-social-card.jpg', // TODO: change the social card!
       navbar: {
         logo: {
           alt: 'Senseable City Lab',
