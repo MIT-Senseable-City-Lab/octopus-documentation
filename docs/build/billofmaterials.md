@@ -18,7 +18,7 @@ Note that all links provided are examples we know will work to build the octopus
 
 :::
 
-### PCB setup
+### PCB
 
 ![OctopuPCB](../../static/img/electronics/OctopusPCB.png)
  
@@ -28,7 +28,7 @@ The costum PCB can be set up to ways:
 
 In any case, you can find all the Gerberfiles, schematics and BOM files needed to order and solder the Octopus PCB: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware
 
-*See [Electronics (files)](../build/electronics.md) for more information.*
+*See [PCB](../build/electronics.md) for more information on how to set it up.*
 
 
 ### Hardware components
