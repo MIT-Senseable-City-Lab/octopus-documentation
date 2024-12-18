@@ -44,44 +44,47 @@ It is divided into two parts accordingly:
 To safely secure the fan into position, push it from its center until you hear a *'click'* sound. 
 :::
 <br/>
-[image here]
+![a4](../../static/img/assembly/step4_assembly.png)
 
-
- <br/>
-**2.** After selecting the appropriate head variation for the given arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.<br/>
-[image here]
 
 
  <br/>
-**3.** Insert an **SD card** into the PCB designated slot for data storage.<br/>
-[image here]
-
-
- <br/>
-**4.** Securely place the Arduino board in the print, ensuring it is properly oriented as per the following image.
+**2.** Pick up the PCB and plug the battery into the port labeled “battery” on its back.
 <br/>
 [image here]
 
 
  <br/>
-**5.** Use **rubber bands** to secure the PCB to the head’s protruding securing parts.
+**3.** After selecting the appropriate head variation for the given arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.<br/>
+[image here]
+
+
+ <br/>
+**4.** Insert an **SD card** into the PCB designated slot for data storage.<br/>
+[image here]
+
+
+ <br/>
+**5.** Securely place the Arduino board in the print, ensuring it is properly oriented as per the following image.
+<br/>
+[image here]
+
+
+ <br/>
+**6.** Use **rubber bands** to secure the PCB to the head’s protruding securing parts.
 <br/>
 [image here]
 
 
 ### Step 3: Plug electronics
 
-**1.** Plug the battery into the port labeled “battery” on the PCB.
+ <br/>
+**1.** Connect the GPS module to the PCB at the “QWIIC” port.
 <br/>
 [image here]
 
  <br/>
-**2.** Connect the GPS module to the PCB at the “QWIIC” port.
-<br/>
-[image here]
-
- <br/>
-**3.** INFO ON HOW THE FAN SHOULD BE INTEGRATED INTO THE PCB 
+**2.** INFO ON HOW THE FAN SHOULD BE INTEGRATED INTO THE PCB 
 <br/>
 [image here]
 
