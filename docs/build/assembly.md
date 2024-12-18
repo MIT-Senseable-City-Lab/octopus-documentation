@@ -49,25 +49,28 @@ To safely secure the fan into position, push it from its center until you hear a
 
 
  <br/>
-**2.** Pick up the PCB and plug the battery into the port labeled “battery” on its back.
+**2.** Pick up the PCB and plug the battery into the port labeled “battery” on its back. 
 <br/>
-[image here]
+![a5](../../static/img/assembly/step5_assembly.png)
 
 
  <br/>
-**3.** After selecting the appropriate head variation for the given arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.<br/>
-[image here]
+**3.** After selecting the appropriate head variation for the given arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.
+<br/>
+![a6](../../static/img/assembly/step6_assembly.png)
 
 
  <br/>
-**4.** Insert an **SD card** into the PCB designated slot for data storage.<br/>
-[image here]
+**4.** Insert an **SD card** into the PCB designated slot for data storage.
+<br/>
+![a7](../../static/img/assembly/step7_assembly.png)
 
 
  <br/>
 **5.** Securely place the Arduino board in the print, ensuring it is properly oriented as per the following image.
 <br/>
-[image here]
+![a8](../../static/img/assembly/step8_assembly.png)
+
 
 
  <br/>
