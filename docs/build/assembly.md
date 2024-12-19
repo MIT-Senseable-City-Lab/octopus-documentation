@@ -67,7 +67,7 @@ To safely secure the fan into position, push it from its center until you hear a
 
 
  <br/>
-**5.** Securely place the Arduino board in the print, ensuring it is properly oriented as per the following image.
+**5.** Securely place the Arduino board in the print, making sure it is properly oriented as per the following image.
 <br/>
 ![a8](../../static/img/assembly/step8_assembly.png)
 
@@ -76,7 +76,7 @@ To safely secure the fan into position, push it from its center until you hear a
  <br/>
 **6.** Use **rubber bands** to secure the PCB to the head’s protruding securing parts.
 <br/>
-[image here]
+![a9](../../static/img/assembly/step9_assembly.png)
 
 
 ### Step 3: Plug electronics
@@ -84,7 +84,7 @@ To safely secure the fan into position, push it from its center until you hear a
  <br/>
 **1.** Connect the GPS module to the PCB at the “QWIIC” port.
 <br/>
-[image here]
+![a10](../../static/img/assembly/step10_assembly.png)
 
  <br/>
 **2.** INFO ON HOW THE FAN SHOULD BE INTEGRATED INTO THE PCB 
@@ -96,7 +96,7 @@ To safely secure the fan into position, push it from its center until you hear a
 
 **1.** Attach the bottom part to the head section by screwing them together.
 <br/>
-[image here]
+![a11](../../static/img/assembly/step11_assembly.png)
 
 :::tip
 
@@ -112,7 +112,7 @@ This version includes the **middle section** for housing the Sensirion SPS30 sen
 
 ### Step 1: Prepare the middle layer
 
-Insert the **Sensirion SPS30 sensor** into the middle section, ensuring correct orientation.
+Insert the **Sensirion SPS30 sensor** into the middle section and ensure it is placed in its correct orientation.
 <br/>
 [image here]
 
@@ -136,11 +136,13 @@ When mounting the Sensirion SPS30 sensor, ensure the **top side with the logo an
 [image here]
 
  <br/>
-**2.** Screw the head section onto the middle section, connecting all required wires to the PCB.
+**2.** Screw the head section onto the middle section after inserting all required wires to the PCB - as per previous instructions.
 <br/>
 [image here]
 
 ---
 
 
-With your Octopus fully assembled, you’re now ready to dive into the next step: setting up and modifying the Octopus firmware to suit your chosen configuration. 
+**With your Octopus fully assembled, you’re now ready to dive into the next step: setting up the Octopus firmware!**
+<br/>
+![ay](../../static/img/assembly/stepy_assembly.png)
