@@ -407,7 +407,7 @@ When developing and adopting sensing technologies, there are a lot of things tha
 
 Good work! This guide has shown you how to use the octopus to build an image classification model to classify flowers in your environment. By utilizing the opportunities of EdgeAI technologies, your small Octopus is able to classify flowers and change colors based on what it "sees"! 😉
 
-Please leave a comment in the GitHub repo if you have any feedback for Use Case 3 😊
+Please leave a comment in the [GitHub repo](https://github.com/MIT-Senseable-City-Lab/octopus-firmware) if you have any feedback for Use Case 3 😊
 
 ---
 

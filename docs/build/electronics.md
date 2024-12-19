@@ -5,8 +5,6 @@ sidebar_position: 4
 
 # ⚡ PCB
 
-_Octopus electronics_
-
 ---
 
 # PCB 

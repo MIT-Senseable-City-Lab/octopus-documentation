@@ -371,6 +371,6 @@ Good work! This guide has shown you how to use the octopus to monitor heat in a 
 
 We encourage you to have a look at the next use cases 2 and 3 with GPS locations, air pollution, and vision-based monitoring to explore new projects with urban sensing.
 
-Please leave a comment in the GitHub repo if you have any feedback for the Temperature Exposure Use Case 😊
+Please leave a comment in the [GitHub repo](https://github.com/MIT-Senseable-City-Lab/octopus-firmware) if you have any feedback for the Temperature Exposure Use Case 😊
 
 ---

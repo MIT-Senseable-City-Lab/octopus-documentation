@@ -7,8 +7,6 @@ import TabItem from '@theme/TabItem'
 
 # ⚙️ Software Configuration
 
-_How to connect your Octopus to Arduino IDE_
-
 ---
 
 Depending on your Octopus, there are two different ways to configure Arduino IDE for development (Arduino Nano 33 BLE, and Arduino Nicla Vision). Both cases requires you do download libraries and configuring boards and ports to be able to flash the code needed for the ocotopus.
@@ -25,6 +23,13 @@ Go to library manager, and search Octopus:
 Click **Download**. As the Octopus Firmware is dependent on other libraries, you will get a pop up window asking you to download the other packages. Click **Install all**. 
 
 ![Octopus Downloads](../../../static/img/electronics/octopus-download.png)
+
+
+:::info
+
+The firmware source files can be found in GitHub: https://github.com/MIT-Senseable-City-Lab/octopus-firmware 
+
+:::
 
 
 
