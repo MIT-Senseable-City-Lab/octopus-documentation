@@ -5,8 +5,6 @@ sidebar_position: 5
 
 # 🔩 Mechanics (files)
 
-This section of the documentation serves as a guide for fabricating your own Octopus. 
-
 ---
 
 ## Design Overview

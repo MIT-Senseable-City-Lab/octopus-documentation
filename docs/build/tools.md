@@ -5,8 +5,6 @@ sidebar_position: 3
 
 # 🧰 Tools
 
-_Tools needed to assemble the device._
-
 ---
 
 ### Bodyframe

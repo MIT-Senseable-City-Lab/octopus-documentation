@@ -5,14 +5,18 @@ sidebar_position: 4
 
 # 🔌 Octopus API
 
-_Octopus Library and function calls_
-
 ---
 
 The Octopus Arduino Library gives you a variety of methods to use on the octoous-object to modify its behaviour. The overview is found below.
 
 To use this library:
 `#include <Octopus.h>`
+
+:::info
+
+The firmware source files can be found in GitHub: https://github.com/MIT-Senseable-City-Lab/octopus-firmware 
+
+:::
 
 
 ## Methods

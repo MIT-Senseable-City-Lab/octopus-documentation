@@ -6,8 +6,6 @@ sidebar_position: 1
 
 # 💿 Software Installation
 
-_Arduino IDE, OpenMV IDE_
-
 ---
 
 ## Download and install Arduino IDE

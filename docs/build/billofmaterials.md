@@ -5,8 +5,6 @@ sidebar_position: 2
 
 # 📦 Bill Of Materials
 
-_Parts_
-
 ---
 
 Below, we provide you with the full list of physical components that are compatible with the octopus. These can be divided in three parts: how to prepare and order the PCB, other hardware electronics and sensors, and materials for the bodyframe. 

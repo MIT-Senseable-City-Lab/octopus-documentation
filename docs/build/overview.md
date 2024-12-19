@@ -5,8 +5,6 @@ sidebar_position: 1
 
 # 🏔️ Overview
 
-_Get started_
-
 ---
 
 *What if we could empower communities to monitor their environment by making fabrication processes accessible for all, fostering a maker-centric approach?*

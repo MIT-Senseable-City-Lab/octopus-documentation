@@ -389,7 +389,7 @@ Good work! This guide has shown you how to use the octopus to monitor air qualit
 
 We encourage you to have a look at the next use cases 3 to explore new projects with urban sensing and the use of EdgeAI. 
 
-Please leave a comment in the GitHub repo if you have any feedback for Use Case 2 😊
+Please leave a comment in the [GitHub repo](https://github.com/MIT-Senseable-City-Lab/octopus-firmware) if you have any feedback for Use Case 2 😊
 
 ---
 
