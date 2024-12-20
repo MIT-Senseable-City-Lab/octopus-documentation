@@ -87,7 +87,7 @@ To safely secure the fan into position, push it from its center until you hear a
 ![a10](../../static/img/assembly/step10_assembly.png)
 
  <br/>
-**2.** INFO ON HOW THE FAN SHOULD BE INTEGRATED INTO THE PCB 
+**2.** Solder the black wire of the fan to the 'GROUND' solder pad and the red wire to the '5V' pad - as shown below. 
 <br/>
 [image here]
 
