@@ -68,4 +68,3 @@ The suggested placement of components on the print bed is as follows:
 
 ![Component Placement](../../static/img/printing-placement.png)
 
-<!-- ### Supports -->

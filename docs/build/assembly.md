@@ -114,7 +114,7 @@ This version includes the **middle section** for housing the Sensirion SPS30 sen
 
 Insert the **Sensirion SPS30 sensor** into the middle section and ensure it is placed in its correct orientation.
 <br/>
-[image here]
+![a12](../../static/img/assembly/step12_assembly.png)
 
 :::info
 
@@ -126,23 +126,30 @@ When mounting the Sensirion SPS30 sensor, ensure the **top side with the logo an
 
  Plug the Sensirion SPS30 sensor into the “air quality” port on the PCB.
 <br/>
-[image here]
+![a13](../../static/img/assembly/step13_assembly.png)
 
 
 ### Step 3: Integration into final octopus assembly
 
 **1.** Attach the middle section to the bottom section, ensuring wires pass through the ventilation cores.
 <br/>
-[image here]
+![a14](../../static/img/assembly/step14_assembly.png)
 
+
+:::tip
+
+Hold onto the wires as they pass through the ventilation cores and during the twisting process to ensure they don’t get caught between the layers.
+::: 
  <br/>
+
+
 **2.** Screw the head section onto the middle section after inserting all required wires to the PCB - as per previous instructions.
 <br/>
-[image here]
+![a15](../../static/img/assembly/step15_assembly.png)
+
 
 ---
 
 
-**With your Octopus fully assembled, you’re now ready to dive into the next step: setting up the Octopus firmware!**
-<br/>
-![ay](../../static/img/assembly/stepy_assembly.png)
+**With your Octopus fully assembled, you’re now ready to dive into the next step: setting up the Octopus firmware!**<br/>
+<!-- ![ay](../../static/img/assembly/stepy_assembly.png) -->
