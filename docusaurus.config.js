@@ -66,7 +66,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/MIT-Senseable-City-Lab/octopus-firmware',
+            href: 'https://github.com/MIT-Senseable-City-Lab/octopus-fabrication',
             label: 'GitHub',
             position: 'right',
           },
@@ -106,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/MIT-Senseable-City-Lab/octopus-firmware',
+                href: 'https://github.com/MIT-Senseable-City-Lab/octopus-fabrication',
               },
             ],
           },
