@@ -34,10 +34,12 @@ The design consists of three distinct components, each serving specific function
 
 | File Name   | Image       | Supports?   | Printing Time   | Download    |
 | ----------- | ----------- | ----------- | --------------- | ----------- |
-| *octopus_top_nano.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer_perspective.png)     | Recommended       |  2h15min           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nano.stl)      |
-| *octopus_top_nikla.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective.png)     | Recommended       | 2h10min           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nikla.stl)      |
+| *octopus_top_nano.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer_perspective.png)     | Optional       |  2h           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nano.stl)      |
+| *octopus_top_nikla.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective.png)     | Optional       | 2h           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nikla.stl)      |
 | *octopus_bottom.stl*   |  ![Legs](../../static/img/octopus-imgs/otopus_bottom-layer_perspective.png)      | Recommended       | 2h30min          | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
-| *octopus_middle.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_middle-layer_perspective.png)       | Needed       | Approx. 2h30min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
+| *octopus_middle.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_middle-layer_perspective.png)       | Needed      | Approx. 2h30min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
+| *octopus_top_nano_fan.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_top-layer_perspective_fan.png)       | Recommended      | 2h15min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nano_fan.stl)        |
+| *octopus_top_nikla_fan.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective_fan.png)       | Recommended       | 2h10min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nikla_fan.stl)        |
 
 
 
