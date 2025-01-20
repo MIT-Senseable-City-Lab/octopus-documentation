@@ -151,10 +151,14 @@ To safely secure the fan into position, push it from its center until you hear a
 :::
 
  <br/>
-**2.** Solder the black wire of the fan to the 'GROUND' solder pad and the red wire to the '5V' pad - as shown below. 
+**2.** Solder a **2-pin right-angle male pin header** to the **'GROUND' solder pad** and the **'5V' pad**  - as shown below. <br/>
 <br/>
-[image here]
+![a16](../../static/img/assembly/step16_assembly.jpeg)
 
+:::tip
+
+Alternatively, if you don't have pin headers in hand, you can also cut the fan wires, solder the **black wire of the fan to the 'GROUND' solder pad** and the **red wire to the '5V' pad**. 
+:::
 <br/>
 **3.** Repeat the steps above to plug the battery and the GPS to the PCB.  
 <br/>
