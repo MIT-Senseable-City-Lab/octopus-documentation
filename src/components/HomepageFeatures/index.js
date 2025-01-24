@@ -6,31 +6,44 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Mobile',
-    Svg: require('@site/static/img/move.svg').default,
-    description: (
-      <>
-        Octopus is designed to be a personal urban sensing platform made for
-        makers and enthusiasts to collect hyperlocal environmental data.
-      </>
-    ),
-  },
-  {
     title: 'Flexible',
     Svg: require('@site/static/img/provision.svg').default,
     description: (
       <>
-        The Octopus lets you deploy the platform with different strategies,
-        collecting a variety of environmental data.
+        Extreme modularity and compatibility with Arduino boards simplifies
+        building a variety of projects: from heat and air quality monitoring to
+        detection of biodiversity markers.
       </>
     ),
   },
   {
-    title: 'Modifiable',
-    Svg: require('@site/static/img/pencil.svg').default,
+    title: 'Deploy anywhere',
+    Svg: require('@site/static/img/move.svg').default,
     description: (
       <>
-        Extend or customize your octopus by using the Octopus Library and API.
+        Multiple tentacle attachments allow Octopus to be deployed everywhere as
+        a stationary, wearable, or vehicular sensing node.
+      </>
+    ),
+  },
+  {
+    title: 'Simple feedback',
+    Svg: require('@site/static/img/svg-icons/circle.svg').default,
+    description: (
+      <>
+        Octopus can display environmental data via simple feedback and, based on
+        configuration, connect to other devices.
+      </>
+    ),
+  },
+  {
+    title: 'Simple fabrication',
+    Svg: require('@site/static/img/svg-icons/3d-printing.svg').default,
+    description: (
+      <>
+        A step-by-step fabrication process guide the user through 3D-printing
+        the outer shell, hand-soldering electronics and starting to code
+        following provided examples.
       </>
     ),
   },
@@ -41,7 +54,7 @@ function Feature({ Svg, title, description }) {
   const svgColor = colorMode === 'dark' ? '#ffffff' : '#000000'; // Adjust colors as needed
 
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className='text--center'>
         <Svg className={styles.featureSvg} role='img' fill={svgColor} />{' '}
         {/* Set fill color */}

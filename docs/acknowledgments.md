@@ -29,7 +29,7 @@ All materials are released under MIT license.
 
 # 💜 Thanks
 
-Than you to the Octopus team Chada Elalami, Åse Håtveit, Oluwatobi Oyinlola, Andrei Speridião, Simone Mora, Titus Venverloo, Fábio Duarte.  
+Than you to the Octopus team Chada Elalami, Åse Håtveit, Oluwatobi Oyinlola, Andrei Speridião, Sabrina Tian, Simone Mora, Matteo Gregis (FAE Technology), Titus Venverloo, Fábio Duarte.  
 
 ---
 

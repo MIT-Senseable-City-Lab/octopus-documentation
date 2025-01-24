@@ -1,9 +1,9 @@
 ---
-sidebar_label: '🔩 Mechanics (files)'
+sidebar_label: '🔩 3D Printing'
 sidebar_position: 5
 ---
 
-# 🔩 Mechanics (files)
+# 🔩 3D Printing
 
 ---
 

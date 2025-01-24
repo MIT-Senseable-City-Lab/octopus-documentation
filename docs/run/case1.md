@@ -5,7 +5,7 @@ icon: 🥵
 
 # 🥵 Temperature Exposure
 
-_Beginner-friendly use case with the octopus_
+_Beginner-friendly use case with the Octopus
 
 ---
 
@@ -17,7 +17,7 @@ In this tutorial, we will go through the requirements of getting started with th
 
 :::warning
 
-This guide assumes that you already have built an octopus to monitor temperature and humidity.
+This guide assumes that you already have built an Octopus to monitor temperature and humidity.
 
 :::
 
@@ -27,25 +27,26 @@ The goals of these projects are:
 
  📘 Learn how to use the **Octopus** Library
 
- 🐙 Collect temperature data with the octopus
-  🗂️ Upload the data from the Octopus
+ 🐙 Collect temperature data with the Octopus
+ 
+ 🗂️ Upload the data from the Octopus
+  
   📈 Process and analyze the collected data
 
 ## Hardware and Software needed
 
-The octopus for temperature exposure consists of these components:
+The Octopus for temperature exposure consists of these components:
 
 - [Octopus](../category/build)
-- [Arduino IDE](../build/firmware/Softwareinstallation)
-- Octopus Library Installed
+- [Octopus Arduino Library](../build/firmware/OctopusArduinoLibrary.md)
 
 ### Octopus Platform Architecture for Temperature Exposure
 
-Monitoring temperature with the octopus is a cheap and simple way to use the octopus. The architecture of the device is shown below.
+Monitoring temperature with the Octopus is a cheap and simple way to use the Octopus. The architecture of the device is shown below.
 
 ![Case1Architecture](../../static/img/usecase1-architecture.jpg)
 
-1. First, the octopus will log temperature and humidity together with a timestamp to your SD card on the device based on the configuration.
+1. First, the Octopus will log temperature and humidity together with a timestamp to your SD card on the device based on the configuration.
 2. Then, you take the SD card and upload the raw data to your computer. Until this step, no processing has happened to the collected data.
 3. In the notebook provided, you get to upload your data and visualize it in a graph. To process the data, we use online services from Google (running a notebook in Google Colab to process data, and Google Disk to store the data).
 
@@ -105,7 +106,7 @@ If you want to read more about the HS3003 sensor you can take a look at the [dat
 
 3.**Test data logging and print sensor values**
 
- Copy-paste the code below, or find it in *Examples* within the Arduino library. This code will read the sensor values and print them in the Serial Monitor within Arduino IDE through the `Serial.println()` functions. By default, the octopus will log all data from connected sensors to the SD card as soon as you turn it on.
+ Copy-paste the code below, or find it in *Examples* within the Arduino library. This code will read the sensor values and print them in the Serial Monitor within Arduino IDE through the `Serial.println()` functions. By default, the Octopus will log all data from connected sensors to the SD card as soon as you turn it on.
 
 
 <details>
@@ -348,7 +349,7 @@ Now that you have the data collected, it's time to analyze it to answer our ques
 
 How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate#data-analysis-software).
 
-Google Colab Notebook for heat exposure data analysis: <a href="./notebooks/UseCase1_HeatExposure.ipynb" download>Click to Download</a>
+Google Colab Notebook for heat exposure data analysis: [Click to Download](../../static/files/notebooks/UseCase1_HeatExposure.ipynb)
 
 ---
 
@@ -367,7 +368,7 @@ When developing and adopting sensing technologies, there are a lot of things tha
 
 ## Conclusion
 
-Good work! This guide has shown you how to use the octopus to monitor heat in a fixed position. By only using the base of the octopus device, you are able to measure hyperlocal temperature levels! Are you ready for the next challenge? 😉
+Good work! This guide has shown you how to use the Octopus to monitor heat in a fixed position. By only using the base of the Octopus device, you are able to measure hyperlocal temperature levels! Are you ready for the next challenge? 😉
 
 We encourage you to have a look at the next use cases 2 and 3 with GPS locations, air pollution, and vision-based monitoring to explore new projects with urban sensing.
 

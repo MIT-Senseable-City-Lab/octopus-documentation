@@ -5,8 +5,6 @@ sidebar_position: 6
 
 # 🧩 Assembly
 
-This section looks into how to assemble your own Octopus. 
-
 ---
 
 ## Overview
@@ -20,7 +18,7 @@ It is divided into two parts accordingly:
 ## Standard Configuration (Air Temperature and Flower Classification)
 
 
-### Step 1: Prepare the bottom layer
+### Step 1: prepare the bottom layer
 
 **1.** Place the **battery** into the bottom section. <br/><br/>
 ![a1](../../static/img/assembly/step1_assembly.jpeg)
@@ -36,7 +34,7 @@ It is divided into two parts accordingly:
  
  <br/>
 
-### Step 2: Prepare the top layer
+### Step 2: prepare the top layer
 
 **1.** Insert an **SD card** into the PCB designated slot for data storage.
 <br/>
@@ -49,7 +47,7 @@ It is divided into two parts accordingly:
 
 
  <br/>
-**3.** After selecting the appropriate head variation for the given arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.
+**3.** After selecting the appropriate head variation for the given Arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.
 <br/>
 ![a6](../../static/img/assembly/step6_assembly.jpeg)
 
@@ -65,14 +63,14 @@ It is divided into two parts accordingly:
 ![a9](../../static/img/assembly/step9_assembly-new.jpeg)
 <br/>
 
-### Step 3: Plug electronics
+### Step 3: plug electronics
 
 **1.** Connect the GPS module to the PCB at the **“QWIIC” port**.
 <br/>
 ![a10](../../static/img/assembly/step10_assembly-new.jpeg)
 <br/>
 
-### Step 4: Final assembly
+### Step 4: final assembly
 
 **1.** Attach the bottom part to the head section by screwing them together.
 <br/>
@@ -90,30 +88,30 @@ Ensure the wires are long enough to twist comfortably during this step.
 
 ## Optional / Expanded Configuration (Air Quality Monitoring)
 
-This version includes the **middle section** for housing the Sensirion SPS30 sensor.
+This version includes the **middle section** for housing the SPS30 air quality sensor.
 
-### Step 1: Prepare the middle layer
+### Step 1: prepare the middle layer
 
-Insert the **Sensirion SPS30 sensor** into the middle section and ensure it is placed in its correct orientation.
+Insert the **SPS30 air quality sensor** into the middle section and ensure it is placed in its correct orientation.
 <br/>
 ![a12](../../static/img/assembly/step12_assembly.jpeg)
 
 :::info
 
-When mounting the Sensirion SPS30 sensor, ensure the **top side with the logo and connection pins is visible**, with the smaller hole (air inlet) and the larger hole (air outlet) facing outward **towards the part openings**.
+When mounting the SPS30 air quality sensor, ensure the **top side with the logo and connection pins is visible**, with the smaller hole (air inlet) and the larger hole (air outlet) facing outward **towards the part openings**.
 :::
 
 <br/>
 
-### Step 2: Connect electronics
+### Step 2: connect electronics
 
- Plug the Sensirion SPS30 sensor into the **“air quality” port** on the PCB.
+ Plug the SPS30 air quality sensor into the “air quality” port on the PCB.
 <br/>
 ![a13](../../static/img/assembly/step13_assembly-new.jpeg)
 
 <br/>
 
-### Step 3: Integration into final octopus assembly
+### Step 3: integration into final Octopus assembly
 
 **1.** Attach the middle section to the bottom section, ensuring wires pass through the ventilation cores.
 <br/>

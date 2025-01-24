@@ -7,12 +7,12 @@ sidebar_position: 2
 
 ---
 
-Below, we provide you with the full list of physical components that are compatible with the octopus. These can be divided in three parts: how to prepare and order the PCB, other hardware electronics and sensors, and materials for the bodyframe. 
+Below, we provide you with the full list of physical components that are compatible with the Octopus. These can be divided in three parts: how to prepare and order the PCB, other hardware electronics and sensors, and materials for the bodyframe. 
 
 
 :::info
 
-Note that all links provided are examples we know will work to build the octopus, but it does not exclude other providers of manufacturers.
+Note that all links provided are examples we know will work to build the Octopus, but it does not exclude other providers of manufacturers.
 
 :::
 
@@ -31,7 +31,7 @@ In any case, you can find all the Gerberfiles, schematics and BOM files needed t
 
 ### Hardware components
 
-Overview of all hardware components possible to add to the octopus: 
+Overview of all hardware components possible to add to the Octopus: 
 
 | **Sensor** | **Comment** | **URL** |
 |-----------------|-----------------|-----------------|
@@ -48,7 +48,7 @@ Components you need to order to build the body frame:
 
 | **Bodyframe** | **Type** | **Comment** | **URL** |
 |-----------------|-----------------|-----------------|-----------------|
-| Filament |  White PLA or PETG | For 3D printing the octopus, make sure the filament you order works with your printer! | [link](https://eu.store.bambulab.com/nl-nl/collections/pla/products/pla-basic-filament) |
+| Filament |  White PLA or PETG | For 3D printing the Octopus, make sure the filament you order works with your printer! | [link](https://eu.store.bambulab.com/nl-nl/collections/pla/products/pla-basic-filament) |
 
 **Note**: To attatch the bodyframe to other surfaces you need to buy other components. Possible attatchments can be anything with a basic gopro mount (like a tripod), rubberbands, magnets, or strings. 
 
