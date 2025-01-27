@@ -60,7 +60,7 @@ It is divided into two parts accordingly:
 ![a8](../../static/img/assembly/step8_assembly-new.jpeg)
 
  <br/>
-**6.** Use **rubber bands** to secure the PCB to the head’s protruding securing parts.
+**6.** Securely attach the PCB to the part using **rubber bands**, ensuring they are wrapped tightly around the protruding sections for a stable hold.
 <br/>
 ![a9](../../static/img/assembly/step9_assembly-new.jpeg)
 <br/>
