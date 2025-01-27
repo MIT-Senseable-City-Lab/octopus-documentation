@@ -13,7 +13,7 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
 ---
 
-## Install Octopus Library
+## Install Octopus Firmware
 
 To start programming your Octopus, you need to install the Octopus Firmware from Arduino libraries. 
 Go to library manager, and search Octopus: 
