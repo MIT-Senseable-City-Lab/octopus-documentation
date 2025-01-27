@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ---
 
-This guide will show you how to upload your first octopus file and check that everything is set up correctly! 
+This guide will show you how to upload your first Octopus file and check that everything is set up correctly! 
 
 The example is using an Octopus with the Arduino Nano Board.
 
@@ -23,6 +23,6 @@ Now, just click the "Upload" button in the environment (the arrow next to the ch
 
 _Please note: If the board fails to enter upload mode, perform a double press on the reset button before initiating the upload process. This action should prompt the orange LED to pulse, indicating that the board is ready for upload._
 
-After a few seconds, you should see the LED on the octopus light up purple. If that is the case, good work! Everything is correctly set up! If not, try toubleshooting suggestions from the [arduino help center](https://support.arduino.cc/hc/en-us).
+After a few seconds, you should see the LED on the Octopus light up purple. If that is the case, good work! Everything is correctly set up! If not, try toubleshooting suggestions from the [arduino help center](https://support.arduino.cc/hc/en-us).
 
 ---

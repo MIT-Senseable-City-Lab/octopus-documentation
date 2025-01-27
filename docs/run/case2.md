@@ -13,11 +13,11 @@ _Mobile deployment with the Octopus_
 
 ## Introduction
 
-In this tutorial, we will show how to deploy and adapt a mobile octopus while collecting air quality data!
+In this tutorial, we will show how to deploy and adapt a mobile Octopus while collecting air quality data!
 
 :::warning
 
-This guide assumes that you already have built an octopus to monitor air quality with a GPS connected
+This guide assumes that you already have built an Octopus to monitor air quality with a GPS connected
 
 :::
 
@@ -27,26 +27,25 @@ The goals of these projects are:
 
   🟩 Use a Sensirion SPS30 PM2.5 Sensor (Air quality sensor)
 
-  🚴 Mobile deployment with the octopus
+  🚴 Mobile deployment with the Octopus
   
   🗺️ Displaying collected air quality data on a map
 
 ## Hardware and Software needed
 
-This guide assumes that you have assembled an octopus from this tutorial (add a link to the tutorial).
+This guide assumes that you have assembled an Octopus from this tutorial (add a link to the tutorial).
 The octopus for air quality monitoring consists of these components:
 
 - [Octopus](../category/build)
-- [Arduino IDE](../build/firmware/Softwareinstallation)
-- Octopus Library installed
+- [Octopus Arduino Library](../build/firmware/OctopusArduinoLibrary.md)
 
 ### Octopus Platform Architecture for Heat Exposure
 
-Monitoring heat with the octopus is a cheap and simple way to use the octopus. The architecture of the device is shown below.
+Monitoring heat with the Octopus is a cheap and simple way to use the Octopus. The architecture of the device is shown below.
 
 ![Case2Architecture](../../static/img/usecase2-architecture.jpg)
 
-1. First, the octopus will log PM2.5 values together with a timestamp to your SD card on the device based on the configuration you choose. 
+1. First, the Octopus will log PM2.5 values together with a timestamp to your SD card on the device based on the configuration you choose. 
 2. Then, you take the SD card and upload the raw data to your computer. Until this step, no processing has happened to the collected data.
 3. In the notebook provided, you get to upload your data and visualize it in a graph. To process the data, we use online services from Google (running a notebook in Google Colab to process data, and Google Disk to store the data). 
 
@@ -112,7 +111,7 @@ For this example, we use this setup for the LED colors to communicate the state 
    <summary><strong>MobileAirQualityMonitoring.h</strong>: show the whole file</summary>
 
 ```py title="MobileAirQualityMonitoring.ino"
-#include "octopus.h"
+#include "Octopus_Firmware.h"
 unsigned long previousMillis = 0;
 const long interval = 5000; // Interval in milliseconds
 unsigned long blinkInterval = 100; // Blinking interval in milliseconds
@@ -354,7 +353,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 | **Physical Casing and Placement** | |
 |---------|----------|
-| Weatherproof Casing | Even though the octopus can handle some rain, try to limit the amount of heavy rain. |
+| Weatherproof Casing | Even though the Octopus can handle some rain, try to limit the amount of heavy rain. |
 | Mounting and Placement | Securely mount the casing to avoid physical damage from wind or animals. Placement should be considered to minimize exposure to direct sunlight and maximize exposure to ambient air.|
 | Maintenance Accessibility | Design the installation so that the device can be easily accessed for maintenance, calibration, or battery replacement. |
 
@@ -366,7 +365,7 @@ Now that you have the data collected, it's time to analyze it to answer our ques
 
 How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate#data-analysis-software).
 
-Google Colab Notebook for temperature exposure data analysis: [Click to Download](./notebooks/UseCase2_AirQuality.ipynb)
+Google Colab Notebook for temperature exposure data analysis: [Click to Download](../../static/files/notebooks/UseCase2_AirQuality.ipynb)
 
 ---
 
@@ -385,7 +384,7 @@ When developing and adopting sensing technologies, there are a lot of things tha
 
 ## Conclusion
 
-Good work! This guide has shown you how to use the octopus to monitor air quality with a mobile deployment. By only using the base of the octopus device, you are able to measure hyperlocal air quality levels! Are you ready for the next challenge? 😉
+Good work! This guide has shown you how to use the Octopus to monitor air quality with a mobile deployment. By only using the base of the Octopus device, you are able to measure hyperlocal air quality levels! Are you ready for the next challenge? 😉
 
 We encourage you to have a look at the next use cases 3 to explore new projects with urban sensing and the use of EdgeAI. 
 

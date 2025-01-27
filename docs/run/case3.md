@@ -12,11 +12,11 @@ _Computer Vision Classification with the Octopus_
 
 ## Introduction
 
-In this tutorial, we will show how to deploy an octopus that can utilize the power of EdgeAI technologies and run classification models to detect its surroundings! This example gives you an introduction to how to set up the software, collect data, train your model, and deploy on the Octopus platform. The classification model of flowers can be changed to any kind type of classification or object detection you want! Use the guide as an example to build your own octopus detection model. 
+In this tutorial, we will show how to deploy an Octopus that can utilize the power of EdgeAI technologies and run classification models to detect its surroundings! This example gives you an introduction to how to set up the software, collect data, train your model, and deploy on the Octopus platform. The classification model of flowers can be changed to any kind type of classification or object detection you want! Use the guide as an example to build your own Octopus detection model. 
 
 :::warning
 
-This guide assumes that you already have built an octopus with a Nicla Vision board for image classification.
+This guide assumes that you already have built an Octopus with a Nicla Vision board for image classification.
 
 :::
 
@@ -34,12 +34,11 @@ The goals for this project are:
 
 ## Hardware and Software needed
 
-This guide assumes that you have assembled an octopus with a Nicla Vision.
-The octopus for image classification consists of these components:
+This guide assumes that you have assembled an Octopus with a Nicla Vision.
+The Octopus for image classification consists of these components:
 
 - [Octopus](/docs/category/build)
-- [Arduino IDE](/docs/build/firmware/Softwareinstallation)
-- Octopus Library installed
+- [Octopus Arduino Library](../build/firmware/OctopusArduinoLibrary.md)
 - Account in [Edge Impulse](https://edgeimpulse.com/)
 - OpenMV IDE (for data collection to train your model)
 
@@ -52,7 +51,7 @@ In this case, the Octopus changes color if it sees a specific flower (Daisy or H
 ![Case2Architecture](../../static/img/usecase3.jpg)
 
 1. The Nicla Vision takes a photo
-2. By running a TinyML on the device, it classifies if the octopus sees a Daisy, Hydrangeas, or only background. 
+2. By running a TinyML on the device, it classifies if the Octopus sees a Daisy, Hydrangeas, or only background. 
 3. If one of the flowers has a predicted value of more than 80%, the Octopus LED will change color. If not, it will be white. 
 
 _Note: these values are easily changed in the code if you want to modify the colors!_
@@ -329,7 +328,7 @@ Then, on your computer, you will have the Arduino Library!
 
 ### Changing the Octopus LED based on classification results
 
-To have the octopus respond with LED colors to the classified values from the model running on your octopus, there are a few changes that need to be done with the file `nicla_vision_camera.ino`. 
+To have the Octopus respond with LED colors to the classified values from the model running on your Octopus, there are a few changes that need to be done with the file `nicla_vision_camera.ino`. 
 
 First, in the `loop()`, before printing the predicted values to the Serial Monitor, add the code below: 
 ```python
@@ -383,7 +382,7 @@ When deploying an environmental sensing device outside, there are several factor
 
 | **Physical Casing and Placement** | |
 |---------|----------|
-| Weatherproof Casing | Even though the octopus can handle some rain, try to limit the amount of heavy rain. |
+| Weatherproof Casing | Even though the Octopus can handle some rain, try to limit the amount of heavy rain. |
 | Mounting and Placement | Securely mount the casing to avoid physical damage from wind or animals. Placement should be considered to minimize exposure to direct sunlight and maximize exposure to ambient air.|
 | Maintenance Accessibility | Design the installation so that the device can be easily accessed for maintenance, calibration, or battery replacement. |
 
@@ -405,7 +404,7 @@ When developing and adopting sensing technologies, there are a lot of things tha
 ## Conclusion
 
 
-Good work! This guide has shown you how to use the octopus to build an image classification model to classify flowers in your environment. By utilizing the opportunities of EdgeAI technologies, your small Octopus is able to classify flowers and change colors based on what it "sees"! 😉
+Good work! This guide has shown you how to use the Octopus to build an image classification model to classify flowers in your environment. By utilizing the opportunities of EdgeAI technologies, your small Octopus is able to classify flowers and change colors based on what it "sees"! 😉
 
 Please leave a comment in the [GitHub repo](https://github.com/MIT-Senseable-City-Lab/octopus-firmware) if you have any feedback for Use Case 3 😊
 

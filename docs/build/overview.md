@@ -40,11 +40,11 @@ ___
 
 # 3 setup examples
 
-The Octopus is developed for three use cases in mind with different skill requirements. But before diving into the use cases, make sure to build an octopus!
+The Octopus is developed for three use cases in mind with different skill requirements. But before diving into the use cases, make sure to build an Octopus!
 
 :::info
 
-All the different Use Cases can be found in the [Run](../category/run/) folder. But before running the use cases, make sure [build your octopus device](../category/build). 
+All the different Use Cases can be found in the [Run](../category/run/) folder. But before running the use cases, make sure [build your Octopus device](../category/build). 
 
 :::
 

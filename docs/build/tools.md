@@ -13,7 +13,7 @@ For making the Octopus bodyframe you need a 3D printer. The one we have used is 
 
 | **Tools** | **Image** | **Comment** | **URL**|
 |-----------------|-----------------|-----------------|-----------------|
-| 3D printer | ![Bambu](../../static/img/electronics/printerbambu.jpeg) | Printing the bodyframe of the octopus. Multiple printers can be used, but for this example, we use Bambu Lab 3D Printers X1 Series. | [link](https://bambulab.com/en-eu/x1) |
+| 3D printer | ![Bambu](../../static/img/electronics/printerbambu.jpeg) | Printing the bodyframe of the Octopus. Multiple printers can be used, but for this example, we use Bambu Lab 3D Printers X1 Series. | [link](https://bambulab.com/en-eu/x1) |
 
 
 ### Soldering (if needed)

@@ -95,10 +95,6 @@ const config = {
                 label: 'Instagram',
                 href: 'https://www.instagram.com/senseable_city_lab/',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/SenseableCity',
-              },
             ],
           },
           {
