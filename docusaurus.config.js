@@ -58,7 +58,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/octopus-social-card.jpeg', // TODO: change the social card!
+      image: 'img/octopus-social-card.jpeg',
       navbar: {
         logo: {
           alt: 'Senseable City Lab',
@@ -107,7 +107,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MIT Senseable City Lab.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MIT Senseable City Lab. Built with Docusaurus`,
       },
       prism: {
         theme: prismThemes.github,
