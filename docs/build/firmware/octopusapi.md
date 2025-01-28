@@ -225,6 +225,7 @@ The firmware source files can be found in GitHub: https://github.com/MIT-Senseab
 
 <details>
     <summary><strong>setDotStarColor((uint8_t r, uint8_t g, uint8_t b)</strong>: Adjusts the RGB LED color based on provided red, green, and blue values</summary>
+    <p>Note that this only changes one of the LEDs as the other one is configured to provide information on battery levels (turn red if battery is low).</p>
     <p><strong>Parameters</strong></p>
     <p>- uint8_t r: variable to indicate level of RED in the LED, values between 0-255 is valid.</p>
     <p>- uint8_t g: variable to indicate level of GREEN in the LED, values between 0-255 is valid.</p>

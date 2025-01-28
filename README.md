@@ -11,7 +11,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 Make sure to clone the repo if you want to run it locally. 
 
 ```
-$ cd docusaurus_octopus
+$ cd octopus-documentation
 $ npm run start
 ```
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.

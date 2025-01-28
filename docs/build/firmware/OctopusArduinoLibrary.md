@@ -13,7 +13,7 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
 ---
 
-## Install Octopus Firmware
+## Install Octopus Library
 
 To start programming your Octopus, you need to install the Octopus Firmware from Arduino libraries. 
 Go to library manager, and search Octopus: 
@@ -45,11 +45,11 @@ The firmware source files can be found in GitHub: https://github.com/MIT-Senseab
 
     ## Open your fist sketch
 
-    Open the Octopus sample sketch: **File > Examples > Octopus Firmware > octopus_sample**. The sketch will appear in a new window.
+    Open the Octopus sample sketch: **File > Examples > Octopus Firmware > octopus_sample**. The sketch will appear in a new window. The window shows the example file to compile and upload to the Octopus. You don’t need to modify the file for it to work! It serves as a ready-to-use example for implementing the Octopus to collect environmental data. However, if you’d like, you’re free to customize the code right away!
 
     **Select your board type and port**
 
-    You'll need to select the entry in the Tools > Board menu that corresponds to your Arduino board.
+    You'll need to select the entry to point the editor to the currect Arduino board in the Tools > Board menu that corresponds to your Arduino board.
 
     Tools > Board > ArduinoMbed OS Nano Boards > Arduino Nano 33 BLE
 
