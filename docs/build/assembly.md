@@ -53,7 +53,8 @@ It is divided into two parts accordingly:
 
 
  <br/>
-**5.** Securely place the Arduino board in the print, making sure it is properly oriented as per the following image.
+**5.** Securely place the Arduino board in the print, making sure it is properly oriented as per the following image. 
+*Note about orientation of the Arduino board:* When placing the Arduino Nicla board, make sure to place it so that the camera is centered on the PCB. If you are using Ardunio Nano, place it so that the USBc connector points in the opposite direction of the RTC (yellow, rounded component on the PCB). 
 <br/>
 ![a8](../../static/img/assembly/step8_assembly-new.jpeg)
 
