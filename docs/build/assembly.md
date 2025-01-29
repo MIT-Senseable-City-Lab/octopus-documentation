@@ -168,5 +168,5 @@ Alternatively, if you don't have pin headers in hand, you can also cut the fan w
 ---
 
 
-**With your Octopus fully assembled, you’re now ready to dive into the next step: setting up the Octopus firmware!**<br/>
+**With your Octopus fully assembled, you’re now ready to dive into the next step: setting up the Octopus Library!**<br/>
 <!-- ![ay](../../static/img/assembly/stepy_assembly.png) -->

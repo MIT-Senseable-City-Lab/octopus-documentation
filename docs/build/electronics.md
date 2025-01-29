@@ -37,3 +37,33 @@ Possible companies to order from: https://jlcpcb.com/ or https://www.pcbway.com/
 
 Gerber files and schematics can be found in the [Github repository](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware)
 
+## Schematics
+
+![Schematics](../../static/img/schematics.png)
+
+[🔎 see larger](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/hardware/octopus_schematic.pdf)
+
+## Specs
+- **BOARD SIZE (XxYxZ):** 69.951x50.268x1.6mm
+- **IPC-6012 - IPC-A-600:** CLASS 2
+- **BOARD TOLERANCE (X|Y|Z):** +/-0.2 | +/-0.2 | +/-10%
+- **E-TESTING:** YES
+- **NO.OF LAYERS:** 4
+- **UL-WARKING:** YES
+- **BASE COPPER OUTSIDE:** 18um
+- **MICROVIA (hole < 100um):** NO
+- **BASE COPPER INSIDE:** 35um
+- **BLIND VIA:** NO
+- **FINISH:** ENIG
+- **BURIED VIA:** NO
+- **SOLDER COLOR:** BLUE
+- **VIA FILL/VIA IN PAD:** NO
+- **SILKSGREEN COLOR:** WHITE
+- **MIN. VIA SIZE:** 0.254mm
+- **DIELECTRIC MATERIAL:** FR4-TG150
+- **MIN.TRACE SPACING:** 0.2mm
+- **IMPEDANCE CONTROL:** NO
+- **QUIER LAYER MIN.TRACE WIDTH:** 0.2mm
+- **CTI:** 175V
+- **INNER LAYER MIN.TRACE WIDTH:** 0.2mm
+

@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Flexible',
-    Svg: require('@site/static/img/provision.svg').default,
+    Svg: require('@site/static/img/svg-icons/provision.svg').default,
     description: (
       <>
         Extreme modularity and compatibility with Arduino boards simplifies
@@ -18,7 +18,7 @@ const FeatureList = [
   },
   {
     title: 'Deploy anywhere',
-    Svg: require('@site/static/img/move.svg').default,
+    Svg: require('@site/static/img/svg-icons/move.svg').default,
     description: (
       <>
         Multiple tentacle attachments allow Octopus to be deployed everywhere as

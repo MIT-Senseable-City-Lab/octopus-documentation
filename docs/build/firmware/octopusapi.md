@@ -14,7 +14,7 @@ To use this library:
 
 :::info
 
-The firmware source files can be found in GitHub: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/firmware
+The library source files can be found in GitHub: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/firmware
 
 :::
 
