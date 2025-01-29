@@ -16,6 +16,14 @@ The costum PCB can be set up to ways:
 1. Order the board from a manufacturing company and ask them to pre-solder the components for you. 
 2. Order the board and all small hardware components separately, and solder it by hand. *Note, this requires you to know how to solder small components.*
 
+## Schematics
+
+![Schematics](../../static/img/schematics.png)
+
+[🔎 see larger](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/hardware/octopus_schematic.pdf)
+
+
+
 ### Process
 
 Possible companies to order from: https://jlcpcb.com/ or https://www.pcbway.com/
@@ -58,6 +66,4 @@ Gerber files and schematics can be found in the [Github repository](https://gith
 - **QUIER LAYER MIN.TRACE WIDTH:** 0.2mm
 - **CTI:** 175V
 - **INNER LAYER MIN.TRACE WIDTH:** 0.2mm
-
-
 
