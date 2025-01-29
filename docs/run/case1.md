@@ -114,7 +114,7 @@ If you want to read more about the HS3003 sensor you can take a look at the [dat
 
 
    ```py title="octopus_sample.ino"
-#include "Octopus_Firmware.h"
+#include "Octopus_Library.h"
 
 unsigned long previousMillis = 0;
 const long interval = 5000; // Interval in milliseconds

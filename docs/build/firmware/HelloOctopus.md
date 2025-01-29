@@ -13,7 +13,7 @@ The example is using an Octopus with the Arduino Nano Board.
 
 **Upload the program**
 
-*Assuming you have the file octopus_sample.ino from the Example folder in the Octopus Firmware*
+*Assuming you have the file octopus_sample.ino from the Example folder in the Octopus Library*
 
 ![Octopus Sample](../../../static/img/electronics/octopus-examplefile.png)
 

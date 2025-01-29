@@ -111,7 +111,7 @@ For this example, we use this setup for the LED colors to communicate the state 
    <summary><strong>MobileAirQualityMonitoring.h</strong>: show the whole file</summary>
 
 ```py title="MobileAirQualityMonitoring.ino"
-#include "Octopus_Firmware.h"
+#include "Octopus_Library.h"
 unsigned long previousMillis = 0;
 const long interval = 5000; // Interval in milliseconds
 unsigned long blinkInterval = 100; // Blinking interval in milliseconds

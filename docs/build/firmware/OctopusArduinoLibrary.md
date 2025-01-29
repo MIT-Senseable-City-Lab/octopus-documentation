@@ -13,21 +13,21 @@ Depending on your Octopus, there are two different ways to configure Arduino IDE
 
 ---
 
-## Install Octopus Firmware
+## Install Octopus Library
 
-To start programming your Octopus, you need to install the Octopus Firmware from Arduino libraries. 
+To start programming your Octopus, you need to install the Octopus Library from Arduino libraries. 
 Go to library manager, and search Octopus: 
 
 ![Octopus Library](../../../static/img/electronics/octopus-library.png)
 
-Click **Download**. As the Octopus Firmware is dependent on other libraries, you will get a pop up window asking you to download the other packages. Click **Install all**. 
+Click **Download**. As the Octopus Library is dependent on other libraries, you will get a pop up window asking you to download the other packages. Click **Install all**. 
 
 ![Octopus Downloads](../../../static/img/electronics/octopus-download.png)
 
 
 :::info
 
-The firmware source files can be found in GitHub: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main 
+The library source files can be found in GitHub: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main 
 
 :::
 
@@ -45,8 +45,7 @@ The firmware source files can be found in GitHub: https://github.com/MIT-Senseab
 
     ## Open your fist sketch
 
-
-    Open the Octopus sample sketch: **File > Examples > Octopus Firmware > octopus_sample**. The sketch will appear in a new window. The window shows the example file to compile and upload to the Octopus. You don’t need to modify the file for it to work! It serves as a ready-to-use example for implementing the Octopus to collect environmental data. However, if you’d like, you’re free to customize the code right away!
+    Open the Octopus sample sketch: **File > Examples > Octopus Library > octopus_sample**. The sketch will appear in a new window. The window shows the example file to compile and upload to the Octopus. You don’t need to modify the file for it to work! It serves as a ready-to-use example for implementing the Octopus to collect environmental data. However, if you’d like, you’re free to customize the code right away!
 
     **Select your board type and port**
 
