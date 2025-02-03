@@ -52,7 +52,7 @@ Components you need to order to build the body frame:
 |-----------------|-----------------|-----------------|
 | Filament |  White PLA or PETG for 3D printing the Octopus, make sure the filament you order works with your printer! | [link](https://eu.store.bambulab.com/nl-nl/collections/pla/products/pla-basic-filament) |
 | Mini rubber bands | Used for placing the PCB. Any kind of mini rubber bands should do the trick. | [link](https://www.amazon.com/Pack-of-300-Small-Hair-Elastics/dp/B003H54TY8/ref=sr_1_7?crid=OMQS1T259F9S&dib=eyJ2IjoiMSJ9.uJLkSiwuQOMWgLZ2ukFOQpcxkj-eCzyVC3rbcBJZHfH0s82BGGYD53Gec95Ttvqbyes1l6Rz40PnvkP8L-_KDOrNy17LJACTBcEZmO1KBmLbNaqj0kcyoAxKb_W55qviTYzcp3Qj5L_xGHCMvAkxYFwjESiBFACJrcssigr2rkWCLop4phy-U4O3UCkpB_Q0-kpEw9bMdxDG5gQ-kS-w5FVwqbsieadoJR92zq6tnwYpVZ4oyMKa-ptc_A4mNV4aNlIqbIkjdnmHmNeXuZov7PgrXO3ZfnULyRwKqBoMXctwMGYe6lxx1OzTjC4cS7cnCrD8G-rG_hZUjiHt6KmV_fHhUgprN12DubSe7T0aCeWVVUT-WMIKx1fals1oW5aV7BwUKh8KOHBbvJJ6GrOIfKXSadYYIGbhCxD7bFu6gaEHY3GOttfosBhP91gU5Ue-.5tLjR8ADCyKLKcPWO6c7Vydq0Vw9bYB9ZDMxdfEkd3Q&dib_tag=se&keywords=mini+rubber+band&qid=1737732260&sprefix=mini+rubber+ban%2Caps%2C199&sr=8-7) |
-| Bottom screw | Used for different deployment strategies like tripods. | [link](https://www.amazon.nl/-/en/Kitchen-Thread-Insert-0-6-20-Cadmium/dp/B09CL453M5/) |
+| 1/4 inch insert  | Used for different deployment strategies like tripods. | [link](https://www.amazon.nl/-/en/Kitchen-Thread-Insert-0-6-20-Cadmium/dp/B09CL453M5/) |
 
 **Note**: To attatch the bodyframe to other surfaces you need to buy other components. Possible attatchments can be anything with a basic gopro mount (like a tripod), rubberbands, magnets, or strings. 
 

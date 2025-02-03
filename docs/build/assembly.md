@@ -82,8 +82,15 @@ It is divided into two parts accordingly:
 Ensure the wires are long enough to twist comfortably during this step.
 :::
 
+ <br/>
+:::note
+ **Bonus:**   <br/>
+ If you would like to deploy your device on a tripod, make use of the 1/4 inch insert (as mentioned in the bill of materials). Turn the bottom 3D printed part **upside down**, place the insert on the **designated hole** and attach using a **soldering iron** as demonstrated [here](https://www.youtube.com/watch?v=gjLvYZUVsLM&pp=ygUoaG93IHRvIGFkZCB0aHJlYWRlZCBpbnNlcnRzIGluIDNkIHByaW50cw%3D%3D). 
+:::
 
  <br/>
+
+
 ---
 
 
