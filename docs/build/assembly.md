@@ -83,9 +83,13 @@ Ensure the wires are long enough to twist comfortably during this step.
 :::
 
  <br/>
-:::note
- **Bonus:**   <br/>
- If you would like to deploy your device on a tripod, make use of the 1/4 inch insert (as mentioned in the bill of materials). Turn the bottom 3D printed part **upside down**, place the insert on the **designated hole** and attach using a **soldering iron** as demonstrated [here](https://www.youtube.com/watch?v=gjLvYZUVsLM&pp=ygUoaG93IHRvIGFkZCB0aHJlYWRlZCBpbnNlcnRzIGluIDNkIHByaW50cw%3D%3D). 
+
+ **2.** If you would like to deploy your device on a tripod, make use of the 1/4 inch insert (as mentioned in the bill of materials). Turn the bottom 3D printed part **upside down**, place the insert on the **designated hole** and line the tip of your **soldering iron** with the center of the insert. Wait for a few seconds and push gently until fully inserted. 
+<br/>
+![a11](../../static/img/assembly/step17_assembly.jpeg)
+
+:::warning
+Make sure you are not applying pressure on the insert at an angle. The soldering iron should be positioned at a **90 degrees angle** from your 3D printed part. When inserted, remove the soldering iron immediately as it might pierce into the 3D print. 
 :::
 
  <br/>
