@@ -64,16 +64,15 @@ It is divided into two parts accordingly:
 ![a9](../../static/img/assembly/step9_assembly-new.jpeg)
 <br/>
 
-### Step 3: plug electronics
+### Step 3: final assembly
 
 **1.** Connect the GPS module to the PCB at the **“QWIIC” port**.
 <br/>
 ![a10](../../static/img/assembly/step10_assembly-new.jpeg)
 <br/>
 
-### Step 4: final assembly
 
-**1.** Attach the bottom part to the head section by screwing them together.
+**2.** Attach the bottom part to the head section by screwing them together.
 <br/>
 ![a11](../../static/img/assembly/step11_assembly.jpeg)
 
@@ -84,7 +83,7 @@ Ensure the wires are long enough to twist comfortably during this step.
 
  <br/>
 
- **2.** If you would like to deploy your device on a tripod, make use of the 1/4 inch insert (as mentioned in the bill of materials). Turn the bottom 3D printed part **upside down**, place the insert on the **designated hole** and line the tip of your **soldering iron** with the center of the insert. Wait for a few seconds and push gently until fully inserted. 
+ **3.** If you would like to deploy your device on a tripod, make use of the 1/4 inch insert (as mentioned in the bill of materials). Turn the bottom 3D printed part **upside down**, place the insert on the **designated hole** and line the tip of your **soldering iron** with the center of the insert. Wait for a few seconds and push gently until fully inserted. 
 <br/>
 ![a11](../../static/img/assembly/step17_assembly.jpeg)
 
