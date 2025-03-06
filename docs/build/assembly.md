@@ -47,7 +47,7 @@ It is divided into two parts accordingly:
 
 <br/>
 
-**3.** Place the microcontroller on the PCB, depending on you use case *(Nikla vision for camera use, Nano for temperature and air quality)*. Pay attention to the direction of the board, if this is placed wrong you will not be able to turn on the device. Make sure that for both boards, the power-connector (indicated bu the horizontal purple arrows on the boards) is pointing in the opposite direction of the RTC (yellow round part on the PCB). 
+**3.** Place the microcontroller on the PCB, depending on you use case *(Nicla vision for camera use, Nano for temperature and air quality)*. Pay attention to the direction of the board, if this is placed wrong you will not be able to turn on the device. Make sure that for both boards, the power-connector (indicated by the horizontal purple arrows on the boards) is pointing in the opposite direction of the RTC (yellow round part on the PCB). On the Nicla board, the camera should be in the middle of the PCB. 
 
 ![direction](../../static/img/assembly/assembly_direction.png)
 
