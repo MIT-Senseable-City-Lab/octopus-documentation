@@ -45,9 +45,15 @@ It is divided into two parts accordingly:
 <br/>
 ![a5](../../static/img/assembly/step5_assembly.jpeg)
 
+<br/>
+
+**3.** Place the microcontroller on the PCB, depending on you use case *(Nikla vision for camera use, Nano for temperature and air quality)*. Pay attention to the direction of the board, if this is placed wrong you will not be able to turn on the device. Make sure that for both boards, the power-connector (indicated bu the horizontal purple arrows on the boards) is pointing in the opposite direction of the RTC (yellow round part on the PCB). 
+
+![direction](../../static/img/assembly/assembly_direction.png)
+
 
  <br/>
-**3.** After selecting the appropriate head variation for the given Arduino *(Nikla vision for camera use, Nano for temperature and air quality)*, **turn on** the Arduino board by pressing the white button as shown in the picture.
+**4.** Turn on the Arduino board by pressing the white button as shown in the picture.
 <br/>
 ![a6](../../static/img/assembly/step6_assembly.jpeg)
 
