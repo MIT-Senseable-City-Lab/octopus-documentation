@@ -12,7 +12,7 @@ sidebar_position: 1
 ---
 
 
-The Octopus Platform is an open-sourced, low-cost environmental sensing tool for makers to develop and adapt urban environmental sensing projects. 
+The Octopus Platform is an open-sourced, low-cost environmental sensing tool for makers to develop, adapt and adopt urban environmental sensing projects. 
 
 Build your own Octopus and engage in the community of environmental sensing!
 
