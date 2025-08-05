@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ---
 
-Below, we provide you with the list of physical components that are required to build one Octopus. These parts can be divided in three groups: the PCB parts, sensors, cables and batteries; and materials for 3D printing the bodyframe. 
+Below, we provide you with the list of physical components that are required to build one Octopus. These parts can be divided in three groups: the PCB, MCU and external components; and materials for 3D printing the bodyframe. 
 
 
 :::info
@@ -29,7 +29,7 @@ For both options, gerberfiles, schematics and BOM files needed to order and sold
 *See [PCB](../build/electronics.md) for further information*
 
 
-### Hardware components
+### MCU and external components
 
 | **Sensor** | **Comment** | **URL** |
 |-----------------|-----------------|-----------------|
