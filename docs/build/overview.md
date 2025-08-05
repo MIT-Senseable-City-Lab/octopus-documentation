@@ -12,7 +12,7 @@ sidebar_position: 1
 ---
 
 
-The core of the octopus is fabricability, modularity and 'deploy everywhere'.
+The core principles of octopus are: fabricability, modularity and 'deploy everywhere'.
 
 :::tip[⚙️ Fabricability]
 
@@ -38,13 +38,13 @@ The core of the octopus is fabricability, modularity and 'deploy everywhere'.
 ___
 
 
-# 3 setup examples
+# Three sample projects
 
-The Octopus is developed for three use cases in mind with different skill requirements. But before diving into the use cases, make sure to build an Octopus!
+The Octopus is developed for three use cases in mind with different skill requirements. 
 
 :::info
 
-All the different Use Cases can be found in the [Run](../category/run/) folder. But before running the use cases, make sure [build your Octopus device](../category/build). 
+Use cases can be found in the [Run](../category/run/) folder. But before running the use cases, make sure [build your Octopus device](../category/build) first. 
 
 :::
 
