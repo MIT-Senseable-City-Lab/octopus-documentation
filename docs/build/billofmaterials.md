@@ -7,12 +7,12 @@ sidebar_position: 2
 
 ---
 
-Below, we provide you with the full list of physical components that are compatible with the Octopus. These can be divided in three parts: how to prepare and order the PCB, other hardware electronics and sensors, and materials for the bodyframe. 
+Below, we provide you with the list of physical components that are required to build one Octopus. These parts can be divided in three groups: the PCB parts, sensors, cables and batteries; and materials for 3D printing the bodyframe. 
 
 
 :::info
 
-Note that all links provided are examples we know will work to build the Octopus, but it does not exclude other providers of manufacturers.
+Note that all links provided are example components we used to build Octopus, but it does not exclude other providers or manufacturers.
 
 :::
 
@@ -20,18 +20,16 @@ Note that all links provided are examples we know will work to build the Octopus
 
 ![OctopuPCB](../../static/img/electronics/OctopusPCB.png)
  
-The costum PCB can be set up to ways: 
-1. Order the board from a manufacturing company and ask them to pre-solder the components for you. 
-2. Order the board and all small hardware components separately, and solder it by hand. *Note, this requires you to know how to solder small components.*
+The Octopus PCB can be obtained in two ways: 
+1. Ordering a PCB from a manufacturing company and ask them to pre-solder the components, a service usually called PCBA (PCB Assembly)
+2. Order the board and all hardware components separately, and solder it by hand. *Note, this requires you to know how to solder small components.*
 
-In any case, you can find all the Gerberfiles, schematics and BOM files needed to order and solder the Octopus PCB: https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware
+For both options, gerberfiles, schematics and BOM files needed to order and solder the Octopus PCB are available at https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/tree/main/hardware
 
-*See [PCB](../build/electronics.md) for more information on how to set it up.*
+*See [PCB](../build/electronics.md) for further information*
 
 
 ### Hardware components
-
-Overview of all hardware components possible to add to the Octopus: 
 
 | **Sensor** | **Comment** | **URL** |
 |-----------------|-----------------|-----------------|
@@ -46,15 +44,13 @@ Overview of all hardware components possible to add to the Octopus:
 
 ### Bodyframe components
 
-Components you need to order to build the body frame:
-
 | **Bodyframe** | **Comment** | **URL** |
 |-----------------|-----------------|-----------------|
-| Filament |  White PLA or PETG for 3D printing the Octopus, make sure the filament you order works with your printer! | [link](https://eu.store.bambulab.com/nl-nl/collections/pla/products/pla-basic-filament) |
+| Filament |  PLA or PETG make sure the filament you order works with your printer. | [link](https://eu.store.bambulab.com/nl-nl/collections/pla/products/pla-basic-filament) |
 | Mini rubber bands | Used for placing the PCB. Any kind of mini rubber bands should do the trick. | [link](https://www.amazon.com/Pack-of-300-Small-Hair-Elastics/dp/B003H54TY8/ref=sr_1_7?crid=OMQS1T259F9S&dib=eyJ2IjoiMSJ9.uJLkSiwuQOMWgLZ2ukFOQpcxkj-eCzyVC3rbcBJZHfH0s82BGGYD53Gec95Ttvqbyes1l6Rz40PnvkP8L-_KDOrNy17LJACTBcEZmO1KBmLbNaqj0kcyoAxKb_W55qviTYzcp3Qj5L_xGHCMvAkxYFwjESiBFACJrcssigr2rkWCLop4phy-U4O3UCkpB_Q0-kpEw9bMdxDG5gQ-kS-w5FVwqbsieadoJR92zq6tnwYpVZ4oyMKa-ptc_A4mNV4aNlIqbIkjdnmHmNeXuZov7PgrXO3ZfnULyRwKqBoMXctwMGYe6lxx1OzTjC4cS7cnCrD8G-rG_hZUjiHt6KmV_fHhUgprN12DubSe7T0aCeWVVUT-WMIKx1fals1oW5aV7BwUKh8KOHBbvJJ6GrOIfKXSadYYIGbhCxD7bFu6gaEHY3GOttfosBhP91gU5Ue-.5tLjR8ADCyKLKcPWO6c7Vydq0Vw9bYB9ZDMxdfEkd3Q&dib_tag=se&keywords=mini+rubber+band&qid=1737732260&sprefix=mini+rubber+ban%2Caps%2C199&sr=8-7) |
 | 1/4 inch insert  | Used for different deployment strategies like tripods. | [link](https://www.amazon.nl/-/en/Kitchen-Thread-Insert-0-6-20-Cadmium/dp/B09CL453M5/) |
 
-**Note**: To attatch the bodyframe to other surfaces you need to buy other components. Possible attatchments can be anything with a basic gopro mount (like a tripod), rubberbands, magnets, or strings. 
+**Note**: To attatch the bodyframe to other surfaces you might need to buy other components. Possible attatchments can be anything with a basic gopro mount (like a tripod), rubberbands, magnets, or strings. 
 
 
 ### PCB and components
