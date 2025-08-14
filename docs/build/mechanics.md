@@ -33,7 +33,6 @@ The design consists of three distinct components:
 
 | File Name   | Image       | Supports?   | Printing Time   | Download    |
 | ----------- | ----------- | ----------- | --------------- | ----------- |
-
 | *octopus_top_nano.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer_perspective.png)     | Optional       |  2h           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nano.stl)      |
 | *octopus_top_nicla.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective.png)     | Optional       | 2h           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nicla.stl)      |
 | *octopus_bottom.stl*   |  ![Legs](../../static/img/octopus-imgs/otopus_bottom-layer_perspective.png)      | Recommended       | 2h30min          | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
