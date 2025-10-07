@@ -9,22 +9,19 @@ sidebar_position: 5
 
 ## Design Overview
 
-The design consists of only a few modular components, each serving a specific function:
+The design consists of three distinct components, each serving specific functions: 
 
-**1. Cap - Nano only:**
-- Designed specifically for the **Arduino Nano BLE Sense** configuration.
-- Houses the **PCB** and **temperature sensor**.
-- Serves as a protective top cover and connects directly to the Nano head.
+**1. Top layer (head):**
+- Houses the PCB (and temperature sensor) and an integrated cooling fan.
+- Acts as the top cover for the device, providing access to essential electronic components.
+- **Variations:**
+     - One variation is tailored for the **Arduino Nano BLE Sense**, and does not include a hole at the top.
+     - Another variation accommodates the **Arduino Nicla**, featuring a hole to integrate a camera module.
 
-**2. Head - Nano version:**
-- Works in combination with the **Cap**.
-- Contains the **cooling fan** to ensure adequate airflow and temperature regulation.
-- Provides structural support and interfaces with the middle or bottom layers.
 
-**3. Head - Nicla version:**
-- Designed for the **Arduino Nicla**.
-- Includes a dedicated **opening for the camera module**.
-- Integrates the **cooling fan** and serves as the top housing for this configuration (no cap required).
+**2. Bottom layer (legs):** 
+- Encases the battery and GPS module.
+- Provides the possibility to attach the device to various surfaces.
 
 **4. Middle layer (optional):**
 - Designed to house the **Particulate Matter sensor (Sensirion SPS30)**.
@@ -45,6 +42,8 @@ The design consists of only a few modular components, each serving a specific fu
 | *octopus_top_nicla.stl*      | ![Head](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective_fan.png)     | Optional       | 2h           | [Link  ](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nicla.stl)      |
 | *octopus_bottom.stl*   |  ![Legs](../../static/img/octopus-imgs/otopus_bottom-layer_perspective.png)      | Recommended       | 2h30min          | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_bottom.stl)        |
 | *octopus_middle.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_middle-layer_perspective.png)       | Needed      | Approx. 2h30min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_middle.stl)        |
+| *octopus_top_nano_fan.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_top-layer_perspective_fan.png)       | Recommended      | 2h15min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nano_fan.stl)        |
+| *octopus_top_nicla_fan.stl **(optional)***  |  ![Optional Sensing](../../static/img/octopus-imgs/otopus_top-layer-nikla_perspective_fan.png)       | Recommended       | 2h10min           | [Link](https://github.com/MIT-Senseable-City-Lab/octopus-fabrication/blob/main/octopus_top_nicla_fan.stl)        |
 
 
 

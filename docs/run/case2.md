@@ -365,7 +365,7 @@ Now that you have the data collected, it's time to analyze it to answer our ques
 
 How to set up Google Colaboratory is added in Collaborate - *Data analysis software*: [How to setup Google Colaboratory](../collaborate#data-analysis-software).
 
-Google Colab Notebook for temperature exposure data analysis: [Click to Download](../../static/files/notebooks/UseCase2_AirQuality.ipynb)
+Google Colab Notebook for air quality data analysis: [Click to Download](../../static/files/notebooks/UseCase2_AirQuality.ipynb)
 
 ---
 

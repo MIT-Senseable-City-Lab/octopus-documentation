@@ -40,7 +40,7 @@ All materials are released under MIT license.
   <strong>Chada Elalami</strong> <em> Design, Website & Video</em><br />
   <strong>Åse Hatveit</strong> <em> Documentation & Use cases</em><br />
   <strong>Tobi Oyinlola</strong> <em> Firmware</em><br />
-  <strong>Jessica Biagioli Matteo Gregis</strong> <em> (FAE Technology) Electronics</em><br /><br />
+  <strong>Jessica Biagioli & Matteo Gregis</strong> <em> (FAE Technology) Electronics</em><br /><br />
   <strong>Sabrina Tian</strong> <em> Video</em><br />
   <strong>Yinan Dong</strong> <em> Website</em><br />
   <strong>Martina Mazzarello</strong> <em> Website & Video</em>
