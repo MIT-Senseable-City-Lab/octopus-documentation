@@ -12,11 +12,10 @@ sidebar_position: 4
 
 ![OctopuPCB](../../static/img/electronics/OctopusPCB.png)
  
-The costum PCB can be set up to ways: 
+The custom PCB can be set up in two ways: 
 1. Order the PCB from a manufacturing company and ask them to pre-solder the components for you. This is a service often called PCBA (PCB Assembly)
 2. Order the board and all small hardware components separately, and solder it by hand. *Note, this requires you to know how to solder small components.*
 
-Possible companies to order from: https://jlcpcb.com/ or https://www.pcbway.com/
 
 
 ### Files
