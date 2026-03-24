@@ -97,9 +97,7 @@ The **USB-C connector must face opposite** the RTC (yellow circular component). 
 
 ### Step 4: Final Assembly
 
-**1.** Attach the top and bottom enclosure sections by screwing them together.  
-
-![a11](../../static/img/assembly/step11_assembly.jpeg)
+Attach the top and bottom enclosure sections by screwing them together.  
 
 <br/>
 
