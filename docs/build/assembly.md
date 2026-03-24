@@ -9,202 +9,204 @@ sidebar_position: 6
 
 ## Overview
 
-This guide will help you assemble your own Octopus based on the configuration you’ve chosen. This process should take you about **20 minutes**. <br/>
-It is divided into two parts accordingly:
-1. **Small octopus (standard configuration)**  : For use cases like **air temperature monitoring** or **flower classification**. This configuration is also available with an **integrated fan** that could be useful in warmer climates. *(instructions can be found at the very end of this guide)*
-2. **Long octopus (expanded configuration)**  : For **air quality monitoring** with additional components.
+This guide explains how to assemble the Octopus across its **four main configurations**:
+
+1. **Static Standard**: fixed deployments (e.g., air temperature sensing)
+2. **Mobile Standard**: adds GPS for mobile deployments
+3. **Extended**: adds air quality sensing (SPS30)
+4. **Vision**: uses Nicla Vision for camera-based applications
+
+Estimated assembly time: **~20 minutes**
 
 
-## Standard Configuration (Air Temperature and Flower Classification)
+---
+
+## 1. Static Standard Configuration  
+*(Base setup – required for all other configurations)*
 
 
-### Step 1: prepare the bottom layer
+### Step 1: Prepare Bottom Layer
 
 **1.** Place the **battery** into the bottom section. <br/><br/>
 ![a1](../../static/img/assembly/step1_assembly.jpeg)
 
  <br/>
 
-**2.** Position the **GPS module** on top of the battery in the designated slot.<br/><br/>
-![a2](../../static/img/assembly/step2_assembly.jpeg)
-
+**2.** Secure the battery using **rubber bands** around the built-in posts to prevent movement.
 
  <br/>
 
-**3.** Secure both the battery and GPS module using **rubber bands** around the protruding securing parts.<br/><br/>
-![a3](../../static/img/assembly/step3_assembly.jpeg)
- 
- <br/>
+### Step 2: Prepare Top Layer
 
-### Step 2: prepare the top layer
-
-**1.** Insert an **SD card** into the PCB designated slot for data storage.
+**1.** Insert an **SD card** into the PCB designated slot.
 <br/>
 
-![a7](../../static/img/assembly/step7_assembly.jpeg)
+![sd](../../static/img/assembly/octopus_assem_SD.jpg)
 
 
 **2.** Pick up the PCB and plug the battery into the **port labeled “battery”** on its back. 
 <br/>
 
-![a5](../../static/img/assembly/step5_assembly.jpeg)
+![battery](../../static/img/assembly/octopus_batt.jpg)
 
 <br/>
 
-**3.** Place the microcontroller on the PCB, depending on you use case *(Nicla vision for camera use, Nano for temperature and air quality)*. Pay attention to the direction of the board, if this is placed wrong you will not be able to turn on the device. Make sure that for both boards, the power-connector (indicated by the horizontal purple arrows on the boards) is pointing in the opposite direction of the RTC (yellow round part on the PCB). On the Nicla board, the camera should be in the middle of the PCB. 
+**3.** Mount the **Arduino Nano 33 BLE Sense** on the PCB.  
 
-![direction](../../static/img/assembly/assembly_direction.png)
-
-
- <br/>
-
-**4.** Turn on the Arduino board by pressing the white button as shown in the picture.
+:::info
+⚠️ **Important orientation rule:**  
+The **USB-C connector must face opposite** the RTC (yellow circular component). <br/>
+***Incorrect placement will prevent the device from powering on.***
+![direction](../../static/img/assembly/fig4.png)
+:::
 <br/>
 
-![a6](../../static/img/assembly/step6_assembly.jpeg)
+**4.** Turn on the board using the **white onboard button**.
 
-
- <br/>
-
-**5.** Securely place the Arduino board in the print, making sure it is properly oriented as per the following image. 
-*Note about orientation of the Arduino board:* When placing the Arduino Nicla board, make sure to place it so that the camera is centered on the PCB. If you are using Ardunio Nano, place it so that the USBc connector points in the opposite direction of the RTC (yellow, rounded component on the PCB). 
 <br/>
 
-![a8](../../static/img/assembly/step8_assembly-new.jpeg)
+**5.** Place the PCB into the enclosure and secure it using **rubber bands**.
 
- <br/>
+![pcb](../../static/img/assembly/PCB_flipped.png)
 
-**6.** Securely attach the PCB to the part using **rubber bands**, ensuring they are wrapped tightly around the protruding sections for a stable hold.
-<br/>
-
-![a9](../../static/img/assembly/step9_assembly-new.jpeg)
-<br/>
-
-### Step 3: final assembly
-
-**1.** Connect the GPS module to the PCB at the **“QWIIC” port**.
-<br/>
-
-![a10](../../static/img/assembly/step10_assembly-new.jpeg)
 <br/>
 
 
-**2.** Attach the bottom part to the head section by screwing them together.
+### Step 3: Cooling (mandatory)
+
+:::info
+⚠️ The **cooling fan is required** for reliable operation in real-world deployments.
+:::
+
+**1.** Insert the fan into the head enclosure.  Ensure that the orientation is so that the **blades are facing inward**. 
+
+![fan](../../static/img/assembly/assemblyfan1.jpeg)
+
 <br/>
+
+**2.** Connect the fan:
+
+- Option A: Use a **2-pin header (5V + GND)**  
+- Option B: Solder directly:  
+  - **Red → 5V**  
+  - **Black → GND**
+
+![fan_connect](../../static/img/assembly/fan_connect.jpg)
+
+
+
+### Step 4: Final Assembly
+
+**1.** Attach the top and bottom enclosure sections by screwing them together.  
 
 ![a11](../../static/img/assembly/step11_assembly.jpeg)
 
-:::tip
+<br/>
 
+:::tip
 Ensure the wires are long enough to twist comfortably during this step.
 :::
 
- <br/>
+### Optional Mounting
 
- **3.** If you would like to deploy your device on a tripod, make use of the 1/4 inch insert (as mentioned in the bill of materials). Turn the bottom 3D printed part **upside down**, place the insert on the **designated hole** and line the tip of your **soldering iron** with the center of the insert. Wait for a few seconds and push gently until fully inserted. 
-<br/>
+**Install a 1/4"-20 threaded insert:**
 
-![a11](../../static/img/assembly/step17_assembly.jpeg)
+**1.** Flip the bottom enclosure upside down  
+**2.** Place the insert in the designated hole  
+**3.** Use a **soldering iron** to press it into place  
+
+![tripod](../../static/img/assembly/asseblytripod.jpeg)
 
 :::warning
-Make sure you are not applying pressure on the insert at an angle. The soldering iron should be positioned at a **90 degrees angle** from your 3D printed part. When inserted, remove the soldering iron immediately as it might pierce into the 3D print. 
+Keep the soldering iron at a **90° angle**. Do not tilt the insert.
+Remove the iron immediately after insertion to avoid damaging the print.
 :::
 
- <br/>
-
-
 ---
+## 2. Mobile Standard Configuration  
+*(Adds GPS to Static Standard)*
 
-
-## Optional / Expanded Configuration (Air Quality Monitoring)
-
-This version includes the **middle section** for housing the SPS30 air quality sensor.
-
-### Step 1: prepare the middle layer
-
-Insert the **SPS30 air quality sensor** into the middle section and ensure it is placed in its correct orientation.
-<br/>
-
-![a12](../../static/img/assembly/step12_assembly.jpeg)
-
-:::info
-
-When mounting the SPS30 air quality sensor, ensure the **top side with the logo and connection pins is visible**, with the smaller hole (air inlet) and the larger hole (air outlet) facing outward **towards the part openings**.
-:::
-
-<br/>
-
-### Step 2: connect electronics
-
- Plug the SPS30 air quality sensor into the “air quality” port on the PCB.
-<br/>
-
-![a13](../../static/img/assembly/step13_assembly-new.jpeg)
-
-<br/>
-
-### Step 3: integration into final Octopus assembly
-
-**1.** Attach the middle section to the bottom section, ensuring wires pass through the ventilation cores.
-<br/>
-
-![a14](../../static/img/assembly/step14_assembly.jpeg)
-
-
-:::tip
-
-Hold onto the wires as they pass through the ventilation cores and during the twisting process to ensure they don’t get caught between the layers.
-::: 
- <br/>
-
-
-**2.** Screw the head section onto the middle section after inserting all required wires to the PCB - as per previous instructions.
-<br/>
-
-![a15](../../static/img/assembly/step15_assembly.jpeg)
-
- <br/>
----
-
-
-## Optional / Integrated Fan Configuration 
-
-For applications in warmer climates where overheating might occur, an **integrated cooling fan can be added to the head section**. Please refer to the mechanics file section to print the appropriate part before moving forward down the assembly guide. 
+Follow all steps from **Static Standard**, then:
 
 ### Additional Steps
 
-**1.** Place the fan in the head layer with the **blades facing the interior of the print**. Push it into position from its center until secure.
+**1.** Place the **GPS module** on top of the battery.  
+
+![gps](../../static/img/assembly/assembly15.jpeg)
+
 <br/>
 
-![a4](../../static/img/assembly/step4_assembly.jpeg)
+**2.** Secure it using **rubber bands**.
 
-:::tip
+<br/>
 
-To safely secure the fan into position, push it from its center until you hear a *'click'* sound. 
+**3.** Connect the GPS module to the PCB via the **QWIIC port**.
+
+![gps_connect](../../static/img/assembly/gps_flipped-updated.png)
+
+---
+
+## 3. Extended Configuration  
+*(Adds air quality sensing – SPS30)*
+
+Build on **Mobile Standard**, then:
+
+### Step 1: Prepare Middle Layer
+
+**1.** Insert the **SPS30 air quality sensor** into the middle enclosure.
+
+![sps](../../static/img/assembly/assemblysps1.jpeg)
+
+:::info
+Ensure correct orientation of the SPS30. Make sure that: 
+1. The logo is facing upward 
+2. The inlet and outlet are aligned with the printed enclosure openings
 :::
 
- <br/>
+### Step 2: Connect Sensor
 
-**2.** Solder a **2-pin right-angle male pin header** to the **'GROUND' solder pad** and the **'5V' pad**  - as shown below. <br/>
-<br/>
+**1.** Plug the SPS30 into the **“air quality” port** on the PCB.
 
-![a16](../../static/img/assembly/step16_assembly.jpeg)
+![sps_connect](../../static/img/assembly/sps_connect.png)
+
+### Step 3: Final Assembly
+
+**1.** Attach the middle section to the bottom section.  
+
+![sps_attach](../../static/img/assembly/sps30_placed_update.png)
 
 :::tip
-
-Alternatively, if you don't have pin headers in hand, you can also cut the fan wires, solder the **black wire of the fan to the 'GROUND' solder pad** and the **red wire to the '5V' pad**. 
+Hold wires while passing them through the middle section openings to prevent damage.
 :::
+
 <br/>
 
-**3.** Repeat the steps above to plug the battery and the GPS to the PCB.  
-<br/>
+**2.** Attach the head section to complete the assembly.  
+
+![assemble](../../static/img/assembly/screw_octopus.png)
 
 
+---
+
+## 4. Vision Configuration  
+*(Camera-based sensing with Nicla Vision)*
+
+Build on **Mobile Standard**, but replace the microcontroller:
+
+### Key Differences
+
+**1.** Use **Arduino Nicla Vision** instead of Nano  
+
+**2.** Ensure correct placement:
+- Camera must be **centered on the PCB**
+- Camera aligned with enclosure opening  
+
+**3.** Turn on using onboard button  
 
 
 
 ---
 
 
-**With your Octopus fully assembled, you’re now ready to dive into the next step: setting up the Octopus Library!**<br/>
+**Your Octopus is now assembled! You’re ready to move on to setting up the Octopus Library.**<br/>
 <!-- ![ay](../../static/img/assembly/stepy_assembly.png) -->
