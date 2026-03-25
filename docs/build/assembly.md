@@ -147,17 +147,9 @@ Attach the head section to complete the assembly.
 ## 4. Vision Configuration  
 *(Camera-based sensing with Nicla Vision)*
 
-Build on **Mobile Standard**, but replace the microcontroller:
+Build on **Mobile Standard**, but swap the Nano 33 BLE Sense for the **Arduino Nicla Vision** for image-based applications. 
 
-### Key Differences
-
-Use **Arduino Nicla Vision** instead of Nano  
-Ensure correct placement:
-- Camera must be **centered on the PCB**
-- Camera aligned with enclosure opening  
-
-**3.** Turn on using onboard button  
-
+Camera must be **centered on the PCB** and aligned with the enclosure opening.
 
 
 ---
