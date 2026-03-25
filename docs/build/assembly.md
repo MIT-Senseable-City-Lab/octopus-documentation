@@ -27,7 +27,7 @@ Estimated assembly time: **~20 minutes**
 
 ### Step 1: Prepare Bottom Layer
 
-Place the **battery** into the bottom section. Secure the battery using **elastic bands** around the built-in posts to prevent movement.
+Place the **battery** into the bottom section. Secure the battery using **elastic bands** around the built-in posts (indicated by the pink arrows) to prevent movement.
 ![a1](../../static/img/assembly/step1_assembly.jpeg)
 
  
