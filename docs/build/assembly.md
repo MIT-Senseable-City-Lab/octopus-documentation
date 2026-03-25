@@ -55,19 +55,15 @@ Secure it with **elastic bands**. Turn on the board using the **white onboard bu
 ### Step 6: Fan placement
 The **fan is required** for reliable operation in real-world deployments and to maintain proper airflow.
 
-
-Insert the fan into the head enclosure, ensuring the **blades are facing inward**. Connect the fan cable to the 5V/GND port on the PCB
+Insert the fan into the head enclosure, ensuring the **blades face inward**. Connect the fan cable to the 5V/GND port on the PCB
 ![fan](../../static/img/assembly/fan_assembly_combined.jpg)
 
 
 ### Step 7: Final Assembly
 
-Press the octopus cap on the top body of the device until you hear a click.
+Attach the top and bottom enclosure sections by screwing them together.  
 
 ![closing_cap](../../static/img/assembly/cap-closing-2.jpg)
-
-
-Attach the top and bottom enclosure sections by screwing them together.  
 
 <br/>
 
@@ -94,17 +90,14 @@ Remove the iron immediately after insertion to avoid damaging the print.
 ## 2. Mobile Standard Configuration  
 *(Adds GPS to Static Standard)*
 
-Follow all steps from **Static Standard**, then:
+Follow all steps from **Static Standard**
 
 ### Additional Steps
 
-**1.** Place the **GPS module** on top of the battery.  
+Place the **GPS module** on top of the battery in its designated slot in the bottom enclosure, and secure it with **elastic bands**
 
 ![gps](../../static/img/assembly/assembly15.jpeg)
 
-<br/>
-
-**2.** Secure it using **rubber bands**.
 
 <br/>
 
@@ -117,29 +110,24 @@ Follow all steps from **Static Standard**, then:
 ## 3. Extended Configuration  
 *(Adds air quality sensing – SPS30)*
 
-Build on **Mobile Standard**, then:
+Build on **Mobile Standard**
 
 ### Step 1: Prepare Middle Layer
 
-**1.** Insert the **SPS30 air quality sensor** into the middle enclosure.
+Insert the **SPS30 air quality sensor** into the middle enclosure.
 
 ![sps](../../static/img/assembly/assemblysps1.jpeg)
 
-:::info
-Ensure correct orientation of the SPS30. Make sure that: 
-1. The logo is facing upward 
-2. The inlet and outlet are aligned with the printed enclosure openings
-:::
 
 ### Step 2: Connect Sensor
 
-**1.** Plug the SPS30 into the **“air quality” port** on the PCB.
+Plug the SPS30 into the **“air quality” port** on the PCB.
 
 ![sps_connect](../../static/img/assembly/sps_connect.png)
 
 ### Step 3: Final Assembly
 
-**1.** Attach the middle section to the bottom section.  
+Attach the middle section to the bottom section.  
 
 ![sps_attach](../../static/img/assembly/sps30_placed_update.png)
 
@@ -149,7 +137,7 @@ Hold wires while passing them through the middle section openings to prevent dam
 
 <br/>
 
-**2.** Attach the head section to complete the assembly.  
+Attach the head section to complete the assembly.  
 
 ![assemble](../../static/img/assembly/screw_octopus.png)
 
@@ -163,9 +151,8 @@ Build on **Mobile Standard**, but replace the microcontroller:
 
 ### Key Differences
 
-**1.** Use **Arduino Nicla Vision** instead of Nano  
-
-**2.** Ensure correct placement:
+Use **Arduino Nicla Vision** instead of Nano  
+Ensure correct placement:
 - Camera must be **centered on the PCB**
 - Camera aligned with enclosure opening  
 
