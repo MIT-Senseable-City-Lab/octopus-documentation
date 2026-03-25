@@ -98,7 +98,8 @@ The **USB-C connector must face opposite** the RTC (yellow circular component). 
 ### Step 4: Final Assembly
 
 **1.**  Press the octopus cap on the top body of the device until you hear a click.
-![closing_cap](../../static/img/assembly/cap-closing.jpg)
+
+![closing_cap](../../static/img/assembly/cap-closing-2.jpg)
 
 
 **2.**  Attach the top and bottom enclosure sections by screwing them together.  
