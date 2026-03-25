@@ -36,11 +36,11 @@ Insert an **SD card** into the PCB designated slot. Connect the battery's plug t
 ![sd](../../static/img/assembly/octopus_sd_and_battery.jpg)
 
 
-**3.** Mount the **Arduino Nano 33 BLE Sense** on the PCB.  
+Mount the **Arduino Nano 33 BLE Sense** on the PCB.  
 
 :::info
 ⚠️ **Important orientation rule:**  
-The **USB-C connector must face opposite** the RTC (yellow circular component). <br/>
+The USB-C connector should point in the opposite direction of the supercapacitor (yellow circular component). <br/>
 ***Incorrect placement will prevent the device from powering on.***
 ![direction](../../static/img/assembly/fig4.png)
 :::
