@@ -32,7 +32,7 @@ Place the **battery** into the bottom section. Secure the battery using **rubber
 
  
 ### Step 2: Prepare Top Layer
-Insert an **SD card** into the PCB designated slot. Connect the battery's plug to the PCB at the **port labeled “battery”**. 
+Insert a **micro SD card** into the PCB designated slot. Connect the battery's plug to the PCB at the **port labeled “battery”**. 
 ![sd](../../static/img/assembly/octopus_sd_and_battery.jpg)
 
 ### Step 3: Mount the **Arduino** into the PCB.  
@@ -52,14 +52,14 @@ Secure it with **elastic bands**. Turn on the board using the **white onboard bu
 <br/>
 
 
-### Step 6: Fan placement
+### Step 5: Fan placement
 The **fan is required** for reliable operation in real-world deployments and to maintain proper airflow.
 
 Insert the fan into the head enclosure, ensuring the **blades face inward**. Connect the fan cable to the 5V/GND port on the PCB
 ![fan](../../static/img/assembly/fan_assembly_combined.jpg)
 
 
-### Step 7: Final Assembly
+### Step 6: Final Assembly
 
 Attach the top and bottom enclosure sections by screwing them together.  
 
@@ -101,7 +101,7 @@ Place the **GPS module** on top of the battery in its designated slot in the bot
 
 <br/>
 
-**3.** Connect the GPS module to the PCB via the **QWIIC port**.
+Connect the GPS module to the PCB via the **QWIIC port**.
 
 ![gps_connect](../../static/img/assembly/gps_flipped-updated.png)
 
