@@ -27,29 +27,14 @@ Estimated assembly time: **~20 minutes**
 
 ### Step 1: Prepare Bottom Layer
 
-**1.** Place the **battery** into the bottom section. <br/><br/>
+Place the **battery** into the bottom section. Secure the battery using **rubber bands** around the built-in posts to prevent movement.
 ![a1](../../static/img/assembly/step1_assembly.jpeg)
 
- <br/>
-
-**2.** Secure the battery using **rubber bands** around the built-in posts to prevent movement.
-
- <br/>
-
+ 
 ### Step 2: Prepare Top Layer
+Insert an **SD card** into the PCB designated slot. Connect the battery's plug to the PCB at the **port labeled “battery”**. 
+![sd](../../static/img/assembly/octopus_sd_and_battery.jpg)
 
-**1.** Insert an **SD card** into the PCB designated slot.
-<br/>
-
-![sd](../../static/img/assembly/octopus_assem_SD.jpg)
-
-
-**2.** Pick up the PCB and plug the battery into the **port labeled “battery”** on its back. 
-<br/>
-
-![battery](../../static/img/assembly/octopus_batt.jpg)
-
-<br/>
 
 **3.** Mount the **Arduino Nano 33 BLE Sense** on the PCB.  
 
