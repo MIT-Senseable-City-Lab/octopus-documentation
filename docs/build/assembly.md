@@ -35,59 +35,39 @@ Place the **battery** into the bottom section. Secure the battery using **rubber
 Insert an **SD card** into the PCB designated slot. Connect the battery's plug to the PCB at the **port labeled “battery”**. 
 ![sd](../../static/img/assembly/octopus_sd_and_battery.jpg)
 
+### Step 3: Mount the **Arduino** into the PCB.  
 
-Mount the **Arduino Nano 33 BLE Sense** on the PCB.  
-
-:::info
 ⚠️ **Important orientation rule:**  
 The USB-C connector should point in the opposite direction of the supercapacitor (yellow circular component). <br/>
 ***Incorrect placement will prevent the device from powering on.***
 ![direction](../../static/img/assembly/fig4.png)
-:::
-<br/>
-
-**4.** Turn on the board using the **white onboard button**.
 
 <br/>
 
-**5.** Place the PCB into the enclosure and secure it using **rubber bands**.
+### Step 4: Place the PCB into the enclosure 
+Secure it with **elastic bands**. Turn on the board using the **white onboard button** (pink arrow)
 
 ![pcb](../../static/img/assembly/PCB_flipped.png)
 
 <br/>
 
 
-### Step 3: Cooling (mandatory)
-
-:::info
-⚠️ The **cooling fan is required** for reliable operation in real-world deployments.
-:::
-
-**1.** Insert the fan into the head enclosure.  Ensure that the orientation is so that the **blades are facing inward**. 
-
-![fan](../../static/img/assembly/assemblyfan1.jpeg)
-
-<br/>
-
-**2.** Connect the fan:
-
-- Option A: Use a **2-pin header (5V + GND)**  
-- Option B: Solder directly:  
-  - **Red → 5V**  
-  - **Black → GND**
-
-![fan_connect](../../static/img/assembly/fan_connect.jpg)
+### Step 6: Fan placement
+The **fan is required** for reliable operation in real-world deployments and to maintain proper airflow.
 
 
+Insert the fan into the head enclosure, ensuring the **blades are facing inward**. Connect the fan cable to the 5V/GND port on the PCB
+![fan](../../static/img/assembly/fan_assembly_combined.jpg)
 
-### Step 4: Final Assembly
 
-**1.**  Press the octopus cap on the top body of the device until you hear a click.
+### Step 7: Final Assembly
+
+Press the octopus cap on the top body of the device until you hear a click.
 
 ![closing_cap](../../static/img/assembly/cap-closing-2.jpg)
 
 
-**2.**  Attach the top and bottom enclosure sections by screwing them together.  
+Attach the top and bottom enclosure sections by screwing them together.  
 
 <br/>
 
